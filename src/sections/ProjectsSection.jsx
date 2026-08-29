@@ -3,11 +3,14 @@ import { ArrowDown, ArrowRight, ImageOff } from 'lucide-react'
 
 const PROJECTS = [
   { before: '/assets/projects/project_one_before.jpeg', after: '/assets/projects/project_one_after.jpeg' },
-  { before: '/assets/projects/project_two_before.jpeg', after: '/assets/projects/project_two_after.jpeg' },
-  { before: '/assets/projects/project_three_before.jpeg', after: '/assets/projects/project_three_after.jpeg' },
-  { before: '/assets/projects/project_four_before.jpeg', after: '/assets/projects/project_four_after.jpeg' },
+   { before: '/assets/projects/project_four_before.jpeg', after: '/assets/projects/project_four_after.jpeg' },
+ { before: '/assets/projects/project_two_before.jpeg', after: '/assets/projects/project_two_after.jpeg' },
   { before: '/assets/projects/project_five_before.jpeg', after: '/assets/projects/project_five_after.jpeg' },
+
+ { before: '/assets/projects/project_three_before.jpeg', after: '/assets/projects/project_three_after.jpeg' },
   { before: '/assets/projects/project_six_before.jpeg', after: '/assets/projects/project_six_after.jpeg' },
+    { before: '/assets/projects/project_seven_before.jpeg', after: '/assets/projects/project_seven_after.jpeg' },
+
 ]
 
 export default function ProjectsSection({ sectionRef }) {
