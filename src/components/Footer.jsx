@@ -7,11 +7,15 @@ const SERVICES_LINKS = [
   'Basement Epoxy Flooring',
   'Porch & Front Steps Coating',
   'Commercial Epoxy Flooring',
+].map((label) => ({ label, anchor: 'services' }))
+
+const COMPANY_LINKS = [
+  { label: 'About Us', anchor: 'about' },
+  { label: 'Our Projects', anchor: 'projects' },
+  { label: 'Contact Us', anchor: 'contact' },
 ]
 
-const COMPANY_LINKS = ['About Us', 'Our Projects', 'Contact Us']
-
-export default function Footer() {
+export default function Footer({ onItemTap }) {
   return (
     <footer className="w-full bg-[#080808]">
       <div className="h-px bg-border-soft" />
@@ -22,10 +26,10 @@ export default function Footer() {
             <Brand />
           </div>
           <div className="lg:flex-[2]">
-            <LinksColumn title="Services" links={SERVICES_LINKS} />
+            <LinksColumn title="Services" links={SERVICES_LINKS} onItemTap={onItemTap} />
           </div>
           <div className="lg:flex-[2]">
-            <LinksColumn title="Company" links={COMPANY_LINKS} />
+            <LinksColumn title="Company" links={COMPANY_LINKS} onItemTap={onItemTap} />
           </div>
           <div className="lg:flex-[2]">
             <ContactColumn />
@@ -110,17 +114,20 @@ function SocialIcon({ href, label, children }) {
   )
 }
 
-function LinksColumn({ title, links }) {
+function LinksColumn({ title, links, onItemTap }) {
   return (
     <div>
       <p className="text-[11px] font-bold text-white tracking-[2px]">{title.toUpperCase()}</p>
       <div className="mt-1 w-6 h-0.5 bg-gold" />
       <ul className="mt-5 space-y-3">
         {links.map((link) => (
-          <li key={link}>
-            <a href="#" className="text-[13px] leading-relaxed text-muted-faint hover:text-gold transition">
-              {link}
-            </a>
+          <li key={link.label}>
+            <button
+              onClick={() => onItemTap?.(link.anchor)}
+              className="text-[13px] leading-relaxed text-muted-faint hover:text-gold transition"
+            >
+              {link.label}
+            </button>
           </li>
         ))}
       </ul>

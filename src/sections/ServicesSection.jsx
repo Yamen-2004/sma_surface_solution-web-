@@ -53,6 +53,8 @@ export default function ServicesSection({ sectionRef }) {
   const [active, setActive] = useState(0)
   const [paused, setPaused] = useState(false)
   const timerRef = useRef(null)
+  const touchStartX = useRef(null)
+  const touchDeltaX = useRef(0)
 
   useEffect(() => {
     if (paused) return
@@ -61,6 +63,28 @@ export default function ServicesSection({ sectionRef }) {
     }, 4000)
     return () => clearInterval(timerRef.current)
   }, [paused])
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX
+    setPaused(true)
+  }
+
+  const handleTouchMove = (e) => {
+    if (touchStartX.current === null) return
+    touchDeltaX.current = e.touches[0].clientX - touchStartX.current
+  }
+
+  const handleTouchEnd = () => {
+    const SWIPE_THRESHOLD = 50
+    if (touchDeltaX.current > SWIPE_THRESHOLD) {
+      setActive((i) => (i - 1 + SERVICES.length) % SERVICES.length)
+    } else if (touchDeltaX.current < -SWIPE_THRESHOLD) {
+      setActive((i) => (i + 1) % SERVICES.length)
+    }
+    touchStartX.current = null
+    touchDeltaX.current = 0
+    setPaused(false)
+  }
 
   return (
     <section
@@ -86,6 +110,9 @@ export default function ServicesSection({ sectionRef }) {
           className="mt-14 lg:mt-16 overflow-hidden"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
         >
           <div
             className="flex transition-transform duration-700 ease-out"

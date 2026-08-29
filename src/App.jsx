@@ -37,7 +37,7 @@ function App() {
         <ServicesSection sectionRef={sectionRefs.services} />
         <ProjectsSection sectionRef={sectionRefs.projects} />
         <ContactSection sectionRef={sectionRefs.contact} />
-        <Footer />
+        <Footer onItemTap={scrollToSection} />
       </main>
     </div>
   )
