@@ -31,7 +31,7 @@ export default function ContactSection({ sectionRef }) {
     } \n \n \nMessage: ${form.message}`
     const subject = `New Inquiry from ${form.name} - SMA Surface Solutions`
 
-    const mailtoUrl = `mailto:Smasolutions@gmail.com?subject=${encodeURIComponent(
+    const mailtoUrl = `mailto:smasolutaions@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`
 
@@ -106,8 +106,8 @@ function ContactInfo() {
         <ContactItem
           icon={<Mail size={18} className="text-gold" />}
           title="Email"
-          value="Smasolutions@gmail.com"
-          href="mailto:Smasolutions@gmail.com"
+          value="smasolutaions@gmail.com"
+          href="mailto:smasolutaions@gmail.com"
         />
         <ContactItem
           icon={<MapPin size={18} className="text-gold" />}

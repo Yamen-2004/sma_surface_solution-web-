@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { Warehouse, Home, Building2, Layers } from 'lucide-react'
+import { Warehouse, Zap, Layers, Home, Footprints, Building2 } from 'lucide-react'
 
 const SERVICES = [
   {
@@ -7,29 +7,45 @@ const SERVICES = [
     description:
       'Premium garage flooring solutions built for durability, protection, and modern aesthetics.',
     Icon: Warehouse,
-    image:
-      'https://images.unsplash.com/photo-1615874959474-d609969a20ed?q=80&w=1200&auto=format&fit=crop',
+    image: '/assets/images/garage-epoxy-flooring.png',
   },
   {
-    title: 'Basement Flooring',
+    title: 'Polyaspartic Garage Flooring',
+    description:
+      'Fast-curing, UV-stable polyaspartic coatings that get your garage back in service in as little as a day.',
+    Icon: Zap,
+    image:
+      '/assets/images/polyaspartic-garage-flooring.png',
+  },
+  {
+    title: 'Epoxy Flake Flooring',
+    description:
+      'Decorative flake epoxy systems that add texture, slip resistance, and a custom finish to any space.',
+    Icon: Layers,
+    image:
+      '/assets/images/flake-epoxy-garages.png',
+  },
+  {
+    title: 'Basement Epoxy Flooring',
     description: 'Moisture-resistant epoxy flooring ideal for basements, gyms, and living spaces.',
     Icon: Home,
     image:
-      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1200&auto=format&fit=crop',
+      '/assets/images/basement-epoxy-flooring.png',
   },
   {
-    title: 'Commercial Flooring',
+    title: 'Porch & Front Steps Coating',
+    description:
+      'Weather-resistant coatings for porches and front steps, combining curb appeal with long-lasting protection.',
+    Icon: Footprints,
+    image:
+      '/assets/images/porch-front-steps-coating.jpg',
+  },
+  {
+    title: 'Commercial Epoxy Flooring',
     description: 'Heavy-duty flooring systems designed for warehouses and commercial spaces.',
     Icon: Building2,
     image:
-      'https://images.unsplash.com/photo-1497366412874-3415097a27e7?q=80&w=1200&auto=format&fit=crop',
-  },
-  {
-    title: 'Deck Restoration',
-    description: 'Weather-resistant deck coatings designed for beauty and long-lasting protection.',
-    Icon: Layers,
-    image:
-      'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop',
+      '/assets/images/commercial-epoxy-flooring.jpg'
   },
 ]
 

@@ -2,9 +2,11 @@ import { Phone, Mail, MapPin, Facebook } from 'lucide-react'
 
 const SERVICES_LINKS = [
   'Garage Epoxy Flooring',
-  'Basement Flooring',
-  'Commercial Flooring',
-  'Deck Restoration',
+  'Polyaspartic Garage Flooring',
+  'Epoxy Flake Flooring',
+  'Basement Epoxy Flooring',
+  'Porch & Front Steps Coating',
+  'Commercial Epoxy Flooring',
 ]
 
 const COMPANY_LINKS = ['About Us', 'Our Projects', 'Contact Us']
@@ -133,7 +135,7 @@ function ContactColumn() {
       <div className="mt-1 w-6 h-0.5 bg-gold" />
       <div className="mt-5 space-y-3">
         <ContactItem icon={<Phone size={14} className="text-gold" />} text="+1 (647) 712-0706" />
-        <ContactItem icon={<Mail size={14} className="text-gold" />} text="Smasolutions@gmail.com" />
+        <ContactItem icon={<Mail size={14} className="text-gold" />} text="smasolutaions@gmail.com" />
         <ContactItem icon={<MapPin size={14} className="text-gold" />} text="Ontario, Canada" />
       </div>
     </div>
