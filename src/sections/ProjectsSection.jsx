@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ArrowDown, ArrowRight, ImageOff } from 'lucide-react'
 
 const PROJECTS = [
@@ -13,6 +13,15 @@ const PROJECTS = [
 export default function ProjectsSection({ sectionRef }) {
   const [selected, setSelected] = useState(0)
   const project = PROJECTS[selected]
+
+  useEffect(() => {
+    PROJECTS.forEach(({ before, after }) => {
+      const beforeImg = new Image()
+      beforeImg.src = before
+      const afterImg = new Image()
+      afterImg.src = after
+    })
+  }, [])
 
   return (
     <section
