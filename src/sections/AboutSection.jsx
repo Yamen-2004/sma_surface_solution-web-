@@ -38,7 +38,11 @@ export default function AboutSection({ sectionRef }) {
             <div className="lg:flex-[5] w-full">
               <img
                 src="/assets/images/about.png"
-                alt="Epoxy flooring installation"
+                alt="Front porch steps finished with grey speckled epoxy coating"
+                width={453}
+                height={342}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-[220px] lg:h-[260px] object-cover rounded-2xl"
               />
             </div>
@@ -127,6 +131,8 @@ function FeatureCard({ icon, title, description }) {
       <img
         src={icon}
         alt=""
+        loading="lazy"
+        decoding="async"
         className="w-[70px] h-[70px] lg:w-[100px] lg:h-[100px] object-contain"
       />
       <p className="mt-3 text-sm lg:text-[15px] font-bold text-white text-center">{title}</p>

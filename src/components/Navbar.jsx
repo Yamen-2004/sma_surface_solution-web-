@@ -46,7 +46,7 @@ export default function Navbar({ sectionRefs, onItemTap }) {
   }
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50">
+    <header className="fixed top-0 left-0 right-0 z-50">
       <div
         className={`flex items-center justify-between px-5 md:px-8 lg:px-[120px] transition-all duration-300 ${
           isScrolled ? 'py-3 bg-base/95 shadow-[0_10px_20px_rgba(0,0,0,0.3)]' : 'py-5 bg-transparent'
@@ -57,12 +57,18 @@ export default function Navbar({ sectionRefs, onItemTap }) {
           <img
             src="/assets/images/logo2.png"
             alt="SMA Surface Solutions"
+            width={624}
+            height={299}
+            decoding="async"
             className="h-[50px] md:h-[60px] w-auto"
           />
         </button>
 
         {/* Desktop Nav Pill */}
-        <div className="hidden lg:flex items-center h-10 rounded-full border border-border bg-[#1F1F1F] px-2">
+        <nav
+          aria-label="Primary"
+          className="hidden lg:flex items-center h-10 rounded-full border border-border bg-[#1F1F1F] px-2"
+        >
           {NAV_ITEMS.map((item) => (
             <NavItem
               key={item.anchor}
@@ -71,7 +77,7 @@ export default function Navbar({ sectionRefs, onItemTap }) {
               onClick={() => handleTap(item.anchor)}
             />
           ))}
-        </div>
+        </nav>
 
         {/* Call Button (desktop) */}
         <button
@@ -95,17 +101,19 @@ export default function Navbar({ sectionRefs, onItemTap }) {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden w-full bg-[#0F0F0F] border-t border-b border-border">
-          {NAV_ITEMS.map((item) => (
-            <button
-              key={item.anchor}
-              onClick={() => handleTap(item.anchor)}
-              className={`w-full text-left px-5 py-4 border-b border-border-soft text-[15px] font-medium ${
-                activeSection === item.anchor ? 'text-gold' : 'text-white'
-              }`}
-            >
-              {item.label}
-            </button>
-          ))}
+          <nav aria-label="Mobile">
+            {NAV_ITEMS.map((item) => (
+              <button
+                key={item.anchor}
+                onClick={() => handleTap(item.anchor)}
+                className={`w-full text-left px-5 py-4 border-b border-border-soft text-[15px] font-medium ${
+                  activeSection === item.anchor ? 'text-gold' : 'text-white'
+                }`}
+              >
+                {item.label}
+              </button>
+            ))}
+          </nav>
           <div className="p-5">
             <button
               onClick={handleCall}
@@ -117,7 +125,7 @@ export default function Navbar({ sectionRefs, onItemTap }) {
           </div>
         </div>
       )}
-    </div>
+    </header>
   )
 }
 

@@ -1,30 +1,56 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { ArrowDown, ArrowRight, ImageOff } from 'lucide-react'
 
 const PROJECTS = [
-  { before: '/assets/projects/project_one_before.jpeg', after: '/assets/projects/project_one_after.jpeg' },
-   { before: '/assets/projects/project_four_before.jpeg', after: '/assets/projects/project_four_after.jpeg' },
- { before: '/assets/projects/project_two_before.jpeg', after: '/assets/projects/project_two_after.jpeg' },
-  { before: '/assets/projects/project_five_before.jpeg', after: '/assets/projects/project_five_after.jpeg' },
+  {
+    before: '/assets/projects/project_one_before.jpeg',
+    after: '/assets/projects/project_one_after.jpeg',
+    beforeAlt: 'Bare concrete entry steps with glass railings before epoxy flake coating',
+    afterAlt: 'Entry steps with glass railings finished in grey speckled epoxy flake coating',
+  },
+   {
+    before: '/assets/projects/project_four_before.jpeg',
+    after: '/assets/projects/project_four_after.jpeg',
+    beforeAlt: 'Bare concrete balcony floor before epoxy flake coating',
+    afterAlt: 'Balcony floor finished with tan speckled epoxy flake coating',
+  },
+ {
+    before: '/assets/projects/project_two_before.jpeg',
+    after: '/assets/projects/project_two_after.jpeg',
+    beforeAlt: 'Uncoated concrete entry steps and landing before epoxy flake coating',
+    afterAlt: 'Entry steps and landing finished with grey speckled epoxy flake coating',
+  },
+  {
+    before: '/assets/projects/project_five_before.webp',
+    after: '/assets/projects/project_five_after.webp',
+    beforeAlt: 'Bare concrete garage floor before epoxy coating',
+    afterAlt: 'Garage floor finished with dark grey speckled epoxy coating',
+  },
 
- { before: '/assets/projects/project_three_before.jpeg', after: '/assets/projects/project_three_after.jpeg' },
-  { before: '/assets/projects/project_six_before.jpeg', after: '/assets/projects/project_six_after.jpeg' },
-    { before: '/assets/projects/project_seven_before.jpeg', after: '/assets/projects/project_seven_after.jpeg' },
+ {
+    before: '/assets/projects/project_three_before.jpeg',
+    after: '/assets/projects/project_three_after.jpeg',
+    beforeAlt: 'Worn concrete entry steps before epoxy flake coating',
+    afterAlt: 'Renewed entry steps with grey speckled epoxy flake coating',
+  },
+  {
+    before: '/assets/projects/project_six_before.webp',
+    after: '/assets/projects/project_six_after.jpeg',
+    beforeAlt: 'Exterior steps and patio protected during epoxy coating preparation',
+    afterAlt: 'Finished walkway and steps with beige speckled epoxy coating',
+  },
+    {
+    before: '/assets/projects/project_seven_before.jpeg',
+    after: '/assets/projects/project_seven_after.webp',
+    beforeAlt: 'Worn concrete entry steps before epoxy flake coating',
+    afterAlt: 'Finished entry steps with dark speckled epoxy flake coating',
+  },
 
 ]
 
 export default function ProjectsSection({ sectionRef }) {
   const [selected, setSelected] = useState(0)
   const project = PROJECTS[selected]
-
-  useEffect(() => {
-    PROJECTS.forEach(({ before, after }) => {
-      const beforeImg = new Image()
-      beforeImg.src = before
-      const afterImg = new Image()
-      afterImg.src = after
-    })
-  }, [])
 
   return (
     <section
@@ -51,7 +77,7 @@ export default function ProjectsSection({ sectionRef }) {
         <div className="mt-10 lg:mt-14">
           <div className="hidden lg:flex items-start gap-5">
             <div className="flex-1">
-              <ImageCard label="BEFORE" src={project.before} labelColor="#E53935" height={460} />
+              <ImageCard label="BEFORE" alt={project.beforeAlt} src={project.before} labelColor="#E53935" height={460} />
             </div>
             <div className="flex flex-col items-center justify-center" style={{ height: 460 }}>
               <div className="bg-gold rounded-full p-3.5">
@@ -59,16 +85,16 @@ export default function ProjectsSection({ sectionRef }) {
               </div>
             </div>
             <div className="flex-1">
-              <ImageCard label="AFTER" src={project.after} labelColor="#4CAF50" height={460} />
+              <ImageCard label="AFTER" alt={project.afterAlt} src={project.after} labelColor="#4CAF50" height={460} />
             </div>
           </div>
 
           <div className="lg:hidden flex flex-col gap-4">
-            <ImageCard label="BEFORE" src={project.before} labelColor="#E53935" height={280} />
+            <ImageCard label="BEFORE" alt={project.beforeAlt} src={project.before} labelColor="#E53935" height={280} />
             <div className="flex justify-center">
               <ArrowDown size={32} className="text-gold" />
             </div>
-            <ImageCard label="AFTER" src={project.after} labelColor="#4CAF50" height={280} />
+            <ImageCard label="AFTER" alt={project.afterAlt} src={project.after} labelColor="#4CAF50" height={280} />
           </div>
         </div>
 
@@ -82,7 +108,13 @@ export default function ProjectsSection({ sectionRef }) {
                 selected === i ? 'border-gold border-2' : 'border-border'
               }`}
             >
-              <img src={p.after} alt={`Project ${i + 1}`} className="w-full h-full object-cover" />
+              <img
+                src={p.after}
+                alt={p.afterAlt}
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover"
+              />
               {selected !== i && <div className="absolute inset-0 bg-black/40" />}
               {selected === i && (
                 <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gold" />
@@ -95,7 +127,7 @@ export default function ProjectsSection({ sectionRef }) {
   )
 }
 
-function ImageCard({ label, src, labelColor, height }) {
+function ImageCard({ label, alt, src, labelColor, height }) {
   const [error, setError] = useState(false)
   return (
     <div
@@ -105,8 +137,10 @@ function ImageCard({ label, src, labelColor, height }) {
       {!error ? (
         <img
           src={src}
-          alt={label}
+          alt={alt}
           onError={() => setError(true)}
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover"
         />
       ) : (

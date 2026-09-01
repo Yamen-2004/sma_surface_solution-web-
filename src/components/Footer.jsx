@@ -15,6 +15,8 @@ const COMPANY_LINKS = [
   { label: 'Contact Us', anchor: 'contact' },
 ]
 
+const SERVICE_AREAS = ['Mississauga, ON', 'Oakville, ON', 'Toronto, ON', 'Burlington, ON', 'Milton, ON']
+
 export default function Footer({ onItemTap }) {
   return (
     <footer className="w-full bg-[#080808]">
@@ -30,6 +32,9 @@ export default function Footer({ onItemTap }) {
           </div>
           <div className="lg:flex-[2]">
             <LinksColumn title="Company" links={COMPANY_LINKS} onItemTap={onItemTap} />
+          </div>
+          <div className="lg:flex-[2]">
+            <ServiceAreasColumn />
           </div>
           <div className="lg:flex-[2]">
             <ContactColumn />
@@ -84,7 +89,7 @@ function Brand() {
           href="https://www.instagram.com/sma_surface_solution?igsh=MTM5a3d0a210MDVyMA=="
           label="Instagram"
         >
-          <img src="/assets/icons/instagram.svg" alt="" className="w-4 h-4" />
+          <img src="/assets/icons/instagram.svg" alt="" loading="lazy" decoding="async" className="w-4 h-4" />
         </SocialIcon>
         <SocialIcon
           href="https://www.facebook.com/share/1EGznWuMHm/?mibextid=wwXIfr"
@@ -93,7 +98,7 @@ function Brand() {
           <Facebook size={16} className="text-white" />
         </SocialIcon>
         <SocialIcon href="https://wa.me/16477120706" label="WhatsApp">
-          <img src="/assets/icons/whatsapp.svg" alt="" className="w-4 h-4" />
+          <img src="/assets/icons/whatsapp.svg" alt="" loading="lazy" decoding="async" className="w-4 h-4" />
         </SocialIcon>
       </div>
     </div>
@@ -116,7 +121,7 @@ function SocialIcon({ href, label, children }) {
 
 function LinksColumn({ title, links, onItemTap }) {
   return (
-    <div>
+    <nav aria-label={`${title} links`}>
       <p className="text-[11px] font-bold text-white tracking-[2px]">{title.toUpperCase()}</p>
       <div className="mt-1 w-6 h-0.5 bg-gold" />
       <ul className="mt-5 space-y-3">
@@ -128,6 +133,22 @@ function LinksColumn({ title, links, onItemTap }) {
             >
               {link.label}
             </button>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )
+}
+
+function ServiceAreasColumn() {
+  return (
+    <div>
+      <p className="text-[11px] font-bold text-white tracking-[2px]">SERVICE AREAS</p>
+      <div className="mt-1 w-6 h-0.5 bg-gold" />
+      <ul className="mt-5 space-y-3">
+        {SERVICE_AREAS.map((area) => (
+          <li key={area} className="text-[13px] leading-relaxed text-muted-faint">
+            {area}
           </li>
         ))}
       </ul>

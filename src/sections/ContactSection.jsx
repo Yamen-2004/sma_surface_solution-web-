@@ -123,7 +123,7 @@ function ContactInfo() {
         rel="noreferrer"
         className="mt-9 w-full flex items-center justify-center gap-2 bg-[#25D366] text-white font-extrabold text-[13px] tracking-wider py-4 rounded-sm hover:brightness-105 transition"
       >
-        <img src="/assets/icons/whatsapp.svg" alt="" className="w-4 h-4" />
+        <img src="/assets/icons/whatsapp.svg" alt="" loading="lazy" decoding="async" className="w-4 h-4" />
         CHAT ON WHATSAPP
       </a>
 

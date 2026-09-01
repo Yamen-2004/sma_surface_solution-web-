@@ -15,8 +15,13 @@ export default function HeroSection({ sectionRef, onViewWorkPressed, onGetQuoteP
     >
       {/* Background Image */}
       <img
-        src="/assets/images/background.png"
+        src="/assets/images/background.webp"
         alt=""
+        width={1875}
+        height={839}
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
@@ -102,7 +107,7 @@ export default function HeroSection({ sectionRef, onViewWorkPressed, onGetQuoteP
 function StatItem({ number, label, icon }) {
   return (
     <div className="flex items-center gap-3">
-      <img src={icon} alt="" className="h-20 w-20" />
+      <img src={icon} alt="" decoding="async" className="h-20 w-20" />
       <div className="flex flex-col items-start">
         <span className="text-[22px] font-extrabold text-gold">{number}</span>
         <span className="text-sm text-muted-soft tracking-wide">{label}</span>
