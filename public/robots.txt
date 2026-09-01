@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.smasurfacesolutions.com/sitemap.xml
