@@ -39,16 +39,4 @@ src/
   index.css
 public/
   assets/
-    icons/, images/, projects/   — copied from the Flutter assets folder
-```
-
-## Notes on the port
-
-- Flutter's `MediaQuery` breakpoints (768px / 1024px) became Tailwind's `md:` / `lg:` breakpoints.
-- `flutter_svg` icons are rendered as plain `<img>` tags (the source SVGs already have their
-  colors baked in).
-- The contact form still uses a `mailto:` link, matching the original behavior — no backend.
-- The services carousel is a small hand-rolled auto-playing slider instead of
-  `carousel_slider`; there is no external image gallery library.
-- `url_launcher` calls became plain `<a>` / `window.location.href` calls (`tel:`, `mailto:`,
-  `https://wa.me/...`, social links).
+    icons/, images/, projects/  
