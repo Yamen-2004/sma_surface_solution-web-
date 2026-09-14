@@ -1,26 +1,22 @@
-import { useEffect, useState } from 'react'
+import ResponsiveImage from '../components/ResponsiveImage.jsx'
+import { Phone } from 'lucide-react'
+import { site } from '../content/site.js'
 
-export default function HeroSection({ sectionRef, onViewWorkPressed, onGetQuotePressed }) {
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    const t = requestAnimationFrame(() => setMounted(true))
-    return () => cancelAnimationFrame(t)
-  }, [])
-
+export default function HeroSection() {
   return (
     <section
-      ref={sectionRef}
+      id="home"
       className="relative w-full min-h-screen flex items-center overflow-hidden"
     >
       {/* Background Image */}
-      <img
+      <ResponsiveImage
         src="/assets/images/background.webp"
         alt=""
         width={1875}
         height={839}
         loading="eager"
-        fetchpriority="high"
+        fetchPriority="high"
+        sizes="100vw"
         decoding="async"
         className="absolute inset-0 w-full h-full object-cover"
       />
@@ -44,11 +40,7 @@ export default function HeroSection({ sectionRef, onViewWorkPressed, onGetQuoteP
 
       {/* Content */}
       <div className="relative z-10 w-full px-5 md:px-12 lg:px-[120px] py-32">
-        <div
-          className={`w-full sm:max-w-[700px] mx-auto lg:mx-0 flex flex-col items-center lg:items-start text-center lg:text-left transition-all duration-700 ease-out ${
-            mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}
-        >
+        <div className="hero-copy w-full sm:max-w-[700px] mx-auto lg:mx-0 flex flex-col items-center lg:items-start text-center lg:text-left">
           <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-black leading-[1.05] tracking-tight">
             <span className="text-white">PREMIUM </span>
             <span className="text-gold">EPOXY</span>
@@ -59,42 +51,52 @@ export default function HeroSection({ sectionRef, onViewWorkPressed, onGetQuoteP
           </h1>
 
           <p className="mt-5 text-sm lg:text-sm text-muted-soft leading-relaxed max-w-md">
-            Durable. Beautiful. Built to Last. Transform your garage, basement or commercial
-            space with high-quality epoxy flooring in Ontario.
+            Durable. Beautiful. Built to Last. Transform your garage, basement
+            or commercial space with epoxy and polyaspartic flooring. Serving
+            Mississauga, Oakville, Toronto, Burlington and Milton.
+          </p>
+          <p className="mt-4 text-sm text-gold font-semibold">
+            Polyaspartic preferred · Efficient installation · 5-year warranty
           </p>
 
           <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-4">
-            <button
-              onClick={onGetQuotePressed}
+            <a
+              href="/contact/"
               className="bg-gold text-black font-extrabold text-[13px] tracking-wider px-8 py-[18px] rounded-sm hover:brightness-110 transition"
             >
               GET A FREE QUOTE
-            </button>
-            <button
-              onClick={onViewWorkPressed}
+            </a>
+            <a
+              href={site.phoneHref}
+              className="inline-flex items-center justify-center gap-2 border border-gold text-gold font-bold text-[13px] tracking-wider px-8 py-[18px] rounded-sm hover:bg-gold hover:text-black transition"
+            >
+              <Phone size={17} aria-hidden="true" /> CALL NOW
+            </a>
+            <a
+              href="/projects/"
               className="border border-white/40 text-white font-bold text-[13px] tracking-wider px-8 py-[18px] rounded-sm hover:border-white transition"
             >
               VIEW OUR WORK
-            </button>
+            </a>
           </div>
 
           {/* Stats Row - desktop only */}
           <div className="hidden lg:flex items-center mt-16">
             <StatItem
               number="Serving"
-              label="Ontario"
+              label="The GTA"
               icon="/assets/icons/location.svg"
             />
             <Divider />
             <StatItem
-              number="+50"
-              label="Projects Completed"
+              number="See our work"
+              label="Before & After"
               icon="/assets/icons/complete.svg"
             />
             <Divider />
             <StatItem
-              number="100%"
-              label="Satisfaction"
+              number="Free"
+              label="Project Estimates"
               icon="/assets/icons/satisfaction.svg"
             />
           </div>

@@ -19,12 +19,18 @@ export default {
         muted: {
           DEFAULT: '#9B9B9B',
           soft: '#B0B0B0',
-          faint: '#707070',
-          faintest: '#505050',
+          faint: '#A8A8A8',
+          faintest: '#A0A0A0',
         },
       },
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: [
+          'Inter Variable',
+          'Inter',
+          'ui-sans-serif',
+          'system-ui',
+          'sans-serif',
+        ],
       },
     },
   },
