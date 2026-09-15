@@ -8,6 +8,7 @@ import ContentPages, { AreasList, ProjectCards } from './pages/ContentPages.jsx'
 import { ArticleCards, FAQs } from './components/ContentBlocks.jsx'
 import { getRoute } from './lib/routes.js'
 import DecisionSupport from './components/DecisionSupport.jsx'
+import MarketingConsent from './components/MarketingConsent.jsx'
 
 const homeFaqs = [
   {
@@ -113,6 +114,7 @@ export default function App({ path = '/' }) {
         )}
       </main>
       <Footer />
+      <MarketingConsent />
     </>
   )
 }

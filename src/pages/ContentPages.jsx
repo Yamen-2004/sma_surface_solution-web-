@@ -452,9 +452,41 @@ export default function ContentPages({ route }) {
               address to deliver and protect the site.
             </p>
             <p>
-              This version does not include advertising trackers or a marketing
-              subscription form. Fonts and site images are served with the
-              website.
+              Fonts and site images are served with the website. There is no
+              marketing subscription form.
+            </p>
+          </section>
+          <section>
+            <h2>Optional advertising cookies</h2>
+            <p>
+              If you accept advertising cookies, we load the Meta Pixel to
+              measure page visits and clicks to call, email or open WhatsApp.
+              Meta receives event information, the page URL, browser and device
+              information, IP address and cookie identifiers. Meta may connect
+              this information with your Facebook or Instagram activity to
+              measure and personalize advertising.
+            </p>
+            <p>
+              Our tracking code does not send your enquiry fields, name, email,
+              phone number or project message as event parameters. A contact
+              click does not confirm that a message was sent or a job booked. We
+              do not load the pixel before you accept advertising cookies.
+            </p>
+            <p>
+              You can reject advertising cookies and still use all contact
+              options. Use Cookie settings in the footer to change your choice;
+              withdrawing consent stops further events from our integration.
+              Your choice is saved in this browser. You can also clear cookies
+              in your browser settings. For Meta’s handling of information, see
+              the{' '}
+              <a
+                href="https://www.facebook.com/privacy/policy/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Meta Privacy Policy
+              </a>
+              .
             </p>
           </section>
         </div>

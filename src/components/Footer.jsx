@@ -76,6 +76,15 @@ export default function Footer() {
         <span>© {new Date().getFullYear()} SMA Surface Solutions</span>
         <div>
           <a href="/privacy/">Privacy</a>
+          <button
+            type="button"
+            className="cookie-settings"
+            onClick={() =>
+              window.dispatchEvent(new Event('sma-cookie-settings'))
+            }
+          >
+            Cookie settings
+          </button>
           <a href="/sitemap.xml">Sitemap</a>
           <a href="/feed.xml">RSS</a>
         </div>
