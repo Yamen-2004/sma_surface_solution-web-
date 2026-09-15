@@ -55,6 +55,16 @@ The contact form prepares an email draft or a WhatsApp message and can copy the 
 
 There is no server email provider, database or lead storage configured. Connecting real form delivery requires the correct hosting project and sender-domain/provider setup. No secrets belong in client code.
 
+## Meta Pixel
+
+Website dataset: `1282062623966748` (SMA Surface Solutions - Website), connected to CodexAdAccount `4284713491777947`.
+
+The client loads Meta's pixel only on `smasurfacesolutions.com` and `www.smasurfacesolutions.com`, after the visitor accepts advertising cookies. Local and preview hosts do not send production events. The footer's Cookie settings button allows visitors to change their choice. Choice is stored locally under `sma-marketing-consent-v1`; if storage is blocked, the choice lasts for the current page.
+
+Events: `PageView` once per document; `Contact` for phone, email and WhatsApp actions, with only an allowlisted `contact_channel` parameter. Enquiry fields are not event parameters. `Lead` is deliberately not sent because this site cannot confirm delivery in email or WhatsApp. Automatic configuration is disabled in code; automatic advanced matching should remain off in Events Manager. No Conversions API server integration or access token is included in the website.
+
+Validate a fresh browser visit before consent, rejection, acceptance, returning visits and withdrawal. Use Meta Events Manager's Test events tab on the production domain to confirm PageView/Contact receipt. Consent rejection and browser blockers mean not all visitors will be counted. Vercel's CSP permits only the Meta script and event endpoints needed by this installation.
+
 ## Review and eventual launch
 
 The development branch is `codex/seo-expansion`, prepared for pull-request review into `main`. No production deployment has been performed as part of this work. `vercel.json` is prepared for a future static deployment; it does not provision a project. The canonical URL remains the established production domain, `https://www.smasurfacesolutions.com`. Repository integrations may create preview deployments when the branch is pushed.

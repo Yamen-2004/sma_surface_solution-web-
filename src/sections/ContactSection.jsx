@@ -2,6 +2,7 @@ import { useRef, useState } from 'react'
 import { Phone, Mail, ArrowUpRight, Copy, Check } from 'lucide-react'
 import { site } from '../content/site.js'
 import { services } from '../content/services.js'
+import { getMetaPixel } from '../lib/meta-pixel.js'
 import {
   enquiryText,
   makeEmailLink,
@@ -40,6 +41,7 @@ export default function ContactSection({ standalone = false }) {
     e.preventDefault()
     if (!validate()) return
     window.location.href = makeEmailLink(form)
+    getMetaPixel()?.contact('email')
     setFeedback(
       'Your email draft is ready to open. Send it from your email app to finish. Your details stay here if the app does not open.',
     )
