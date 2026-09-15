@@ -1,180 +1,85 @@
-import { Phone, Mail, MapPin, Facebook } from 'lucide-react'
-
-const SERVICES_LINKS = [
-  'Garage Epoxy Flooring',
-  'Polyaspartic Garage Flooring',
-  'Epoxy Flake Flooring',
-  'Basement Epoxy Flooring',
-  'Porch & Front Steps Coating',
-  'Commercial Epoxy Flooring',
-].map((label) => ({ label, anchor: 'services' }))
-
-const COMPANY_LINKS = [
-  { label: 'About Us', anchor: 'about' },
-  { label: 'Our Projects', anchor: 'projects' },
-  { label: 'Contact Us', anchor: 'contact' },
-]
-
-const SERVICE_AREAS = ['Mississauga, ON', 'Oakville, ON', 'Toronto, ON', 'Burlington, ON', 'Milton, ON']
-
-export default function Footer({ onItemTap }) {
+import { site } from '../content/site.js'
+import { services } from '../content/services.js'
+import { areas } from '../content/areas.js'
+export default function Footer() {
   return (
-    <footer className="w-full bg-[#080808]">
-      <div className="h-px bg-border-soft" />
-
-      <div className="px-5 md:px-12 lg:px-[120px] py-10 md:py-[60px]">
-        <div className="flex flex-col lg:flex-row lg:items-start gap-9 lg:gap-10">
-          <div className="lg:flex-[3]">
-            <Brand />
-          </div>
-          <div className="lg:flex-[2]">
-            <LinksColumn title="Services" links={SERVICES_LINKS} onItemTap={onItemTap} />
-          </div>
-          <div className="lg:flex-[2]">
-            <LinksColumn title="Company" links={COMPANY_LINKS} onItemTap={onItemTap} />
-          </div>
-          <div className="lg:flex-[2]">
-            <ServiceAreasColumn />
-          </div>
-          <div className="lg:flex-[2]">
-            <ContactColumn />
+    <footer className="site-footer">
+      <div className="page-width footer-main">
+        <div className="footer-brand">
+          <a href="/">
+            <img
+              src="/assets/optimized/logo2-320.webp"
+              alt="SMA Surface Solutions home"
+              width="160"
+              height="57"
+              loading="lazy"
+            />
+          </a>
+          <p>
+            Concrete surfaces.
+            <br />
+            <strong>A better finish.</strong>
+          </p>
+          <p className="muted">
+            Epoxy and polyaspartic coatings for homes and commercial spaces
+            across the GTA.
+          </p>
+          <div className="social-links">
+            <a href={site.instagram} target="_blank" rel="noreferrer">
+              Instagram ↗
+            </a>
+            <a href={site.facebook} target="_blank" rel="noreferrer">
+              Facebook ↗
+            </a>
           </div>
         </div>
-      </div>
-
-      <div className="h-px bg-border-soft" />
-
-      <div className="px-5 lg:px-[120px] py-5 flex items-center justify-between flex-wrap gap-2">
-        <p className="text-xs text-muted-faintest">
-          © 2026 SMA Surface Solutions. Developed by{' '}
-          <a
-            href={`https://wa.me/962797937334?text=${encodeURIComponent(
-              'Hello Yamen, I saw your work on SMA app and I want to connect with you!'
-            )}`}
-            target="_blank"
-            rel="noreferrer"
-            className="text-gold font-medium underline"
-          >
-            Yamen Khazar
+        <nav aria-label="Flooring services">
+          <h2>Services</h2>
+          {services.map((s) => (
+            <a key={s.slug} href={`/services/${s.slug}/`}>
+              {s.shortTitle || s.title}
+            </a>
+          ))}
+        </nav>
+        <nav aria-label="Service areas">
+          <h2>Where we work</h2>
+          {areas.map((a) => (
+            <a key={a.slug} href={`/service-areas/${a.slug}/`}>
+              {a.name}
+            </a>
+          ))}
+          <a href={site.maps} target="_blank" rel="noreferrer">
+            Find us on Google ↗
           </a>
-        </p>
-        <p className="hidden md:block text-xs text-muted-faintest">Ontario, Canada</p>
+        </nav>
+        <div>
+          <h2>Let’s talk floors</h2>
+          <a className="footer-phone" href={site.phoneHref}>
+            {site.phone}
+          </a>
+          <a href={`mailto:${site.email}`}>{site.email}</a>
+          <a href={site.whatsapp} target="_blank" rel="noreferrer">
+            Chat on WhatsApp ↗
+          </a>
+          <a href="/contact/">Request your estimate →</a>
+          <nav aria-label="Resources" className="footer-resources">
+            <a href="/blog/">Flooring guides</a>
+            <a href="/epoxy-flooring-questions/">
+              Flooring questions & answers
+            </a>
+            <a href="/projects/">Project gallery</a>
+            <a href="/about/">About SMA</a>
+          </nav>
+        </div>
+      </div>
+      <div className="page-width footer-bottom">
+        <span>© {new Date().getFullYear()} SMA Surface Solutions</span>
+        <div>
+          <a href="/privacy/">Privacy</a>
+          <a href="/sitemap.xml">Sitemap</a>
+          <a href="/feed.xml">RSS</a>
+        </div>
       </div>
     </footer>
-  )
-}
-
-function Brand() {
-  return (
-    <div>
-      <div className="flex items-center gap-2.5">
-        <div className="w-9 h-9 rounded bg-gold flex items-center justify-center">
-          <span className="text-lg font-black text-black">S</span>
-        </div>
-        <div>
-          <p className="text-base font-black text-white tracking-wider leading-none">SMA</p>
-          <p className="text-[8px] font-medium text-gold tracking-wider leading-tight">
-            SURFACE SOLUTIONS
-          </p>
-        </div>
-      </div>
-
-      <p className="mt-5 text-[13px] leading-[1.7] text-muted-faint">
-        Ontario's premier epoxy flooring specialists. Delivering high-performance flooring
-        solutions for over a decade.
-      </p>
-
-      <div className="mt-6 flex items-center gap-2.5">
-        <SocialIcon
-          href="https://www.instagram.com/sma_surface_solution?igsh=MTM5a3d0a210MDVyMA=="
-          label="Instagram"
-        >
-          <img src="/assets/icons/instagram.svg" alt="" loading="lazy" decoding="async" className="w-4 h-4" />
-        </SocialIcon>
-        <SocialIcon
-          href="https://www.facebook.com/share/1EGznWuMHm/?mibextid=wwXIfr"
-          label="Facebook"
-        >
-          <Facebook size={16} className="text-white" />
-        </SocialIcon>
-        <SocialIcon href="https://wa.me/16477120706" label="WhatsApp">
-          <img src="/assets/icons/whatsapp.svg" alt="" loading="lazy" decoding="async" className="w-4 h-4" />
-        </SocialIcon>
-      </div>
-    </div>
-  )
-}
-
-function SocialIcon({ href, label, children }) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noreferrer"
-      aria-label={label}
-      className="w-9 h-9 flex items-center justify-center border border-border rounded-[3px] hover:border-gold transition"
-    >
-      {children}
-    </a>
-  )
-}
-
-function LinksColumn({ title, links, onItemTap }) {
-  return (
-    <nav aria-label={`${title} links`}>
-      <p className="text-[11px] font-bold text-white tracking-[2px]">{title.toUpperCase()}</p>
-      <div className="mt-1 w-6 h-0.5 bg-gold" />
-      <ul className="mt-5 space-y-3">
-        {links.map((link) => (
-          <li key={link.label}>
-            <button
-              onClick={() => onItemTap?.(link.anchor)}
-              className="text-[13px] leading-relaxed text-muted-faint hover:text-gold transition"
-            >
-              {link.label}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  )
-}
-
-function ServiceAreasColumn() {
-  return (
-    <div>
-      <p className="text-[11px] font-bold text-white tracking-[2px]">SERVICE AREAS</p>
-      <div className="mt-1 w-6 h-0.5 bg-gold" />
-      <ul className="mt-5 space-y-3">
-        {SERVICE_AREAS.map((area) => (
-          <li key={area} className="text-[13px] leading-relaxed text-muted-faint">
-            {area}
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
-}
-
-function ContactColumn() {
-  return (
-    <div>
-      <p className="text-[11px] font-bold text-white tracking-[2px]">CONTACT</p>
-      <div className="mt-1 w-6 h-0.5 bg-gold" />
-      <div className="mt-5 space-y-3">
-        <ContactItem icon={<Phone size={14} className="text-gold" />} text="+1 (647) 712-0706" />
-        <ContactItem icon={<Mail size={14} className="text-gold" />} text="smasolutaions@gmail.com" />
-        <ContactItem icon={<MapPin size={14} className="text-gold" />} text="Ontario, Canada" />
-      </div>
-    </div>
-  )
-}
-
-function ContactItem({ icon, text }) {
-  return (
-    <div className="flex items-center gap-2.5">
-      {icon}
-      <span className="text-[13px] text-muted-faint">{text}</span>
-    </div>
   )
 }

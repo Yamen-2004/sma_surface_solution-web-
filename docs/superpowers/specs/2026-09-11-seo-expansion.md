@@ -1,0 +1,7 @@
+# SMA SEO expansion
+
+User approved the audit and asked to implement all feasible optimizations. Preserve the existing black/gold visual identity and React/Vite stack. Build real static HTML routes with hydration, service pages, five honest service-area pages, an editorial blog, photo-led project pages, contact/about/privacy pages and discoverable indexes. No invented customer reviews, locations, prices, credentials, project measurements, materials or warranties. Explain technical topics conservatively with primary references. Keep existing facts unless unsupported marketing claims can be replaced by factual offering descriptions.
+
+Use centralized content objects and metadata; static build renders the same App as the client. Unique titles, descriptions, self-canonicals, social metadata, schema, sitemap and RSS. Links work without JavaScript. Unknown routes return 404. Optimize existing images and fonts, keyboard navigation, contrast, reduced motion, and small-screen layouts. Configure real enquiry delivery only after Vercel/Resend provisioning; no fake success. Preserve input if delivery fails. Avoid sending real test messages without user authorization. Site changes remain on codex/seo-expansion for review; do not publish to production without explicit instruction.
+
+Validation: content structure and link checks, build output tests, contact validation/error path tests, production build, dependency audit, browser desktop and mobile where supported, console/hydration checks. Document external setup limits explicitly.

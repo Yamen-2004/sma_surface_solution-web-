@@ -1,271 +1,271 @@
-import { useState } from 'react'
-import { Phone, Mail, MapPin, User, MessageSquare, Camera, Facebook } from 'lucide-react'
+import { useRef, useState } from 'react'
+import { Phone, Mail, ArrowUpRight, Copy, Check } from 'lucide-react'
+import { site } from '../content/site.js'
+import { services } from '../content/services.js'
+import {
+  enquiryText,
+  makeEmailLink,
+  makeWhatsAppLink,
+  validateEnquiry,
+} from '../lib/enquiry.js'
 
-export default function ContactSection({ sectionRef }) {
-  const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' })
+export default function ContactSection({ standalone = false }) {
+  const [form, setForm] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    city: '',
+    service: '',
+    message: '',
+  })
   const [errors, setErrors] = useState({})
-  const [sending, setSending] = useState(false)
-  const [feedback, setFeedback] = useState(null)
-
-  const handleChange = (field) => (e) => {
-    setForm((f) => ({ ...f, [field]: e.target.value }))
+  const [feedback, setFeedback] = useState('')
+  const [copied, setCopied] = useState(false)
+  const formRef = useRef(null)
+  const change = (e) => {
+    setForm((current) => ({ ...current, [e.target.name]: e.target.value }))
+    setFeedback('')
+    setCopied(false)
   }
-
   const validate = () => {
-    const errs = {}
-    if (!form.name.trim()) errs.name = 'Please enter your name'
-    if (!form.email.trim()) errs.email = 'Please enter your email'
-    if (!form.message.trim()) errs.message = 'Please enter a message'
-    setErrors(errs)
-    return Object.keys(errs).length === 0
+    const next = validateEnquiry(form)
+    setErrors(next)
+    if (Object.keys(next).length) {
+      formRef.current?.elements.namedItem(Object.keys(next)[0])?.focus()
+      return false
+    }
+    return true
   }
-
-  const handleSubmit = (e) => {
+  const email = (e) => {
     e.preventDefault()
     if (!validate()) return
-
-    setSending(true)
-
-    const body = `Name : ${form.name}\nPhone Number : ${
-      form.phone.trim() ? form.phone : 'Not provided'
-    } \n \n \nMessage: ${form.message}`
-    const subject = `New Inquiry from ${form.name} - SMA Surface Solutions`
-
-    const mailtoUrl = `mailto:smasolutaions@gmail.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`
-
-    window.location.href = mailtoUrl
-
-    setSending(false)
-    setFeedback({ type: 'success', text: 'Opening your email app...' })
-    setForm({ name: '', email: '', phone: '', message: '' })
-
-    setTimeout(() => setFeedback(null), 4000)
+    window.location.href = makeEmailLink(form)
+    setFeedback(
+      'Your email draft is ready to open. Send it from your email app to finish. Your details stay here if the app does not open.',
+    )
   }
-
+  const copy = async () => {
+    if (!validate()) return
+    try {
+      await navigator.clipboard.writeText(enquiryText(form))
+      setCopied(true)
+      setFeedback(
+        `Copied. Paste your enquiry into an email to ${site.email} or into WhatsApp.`,
+      )
+    } catch {
+      setFeedback(
+        'Clipboard access is unavailable. Select and copy your details below, or use the email or WhatsApp option.',
+      )
+    }
+  }
   return (
     <section
-      ref={sectionRef}
-      className="w-full bg-base px-5 md:px-12 lg:px-[120px] py-16 lg:py-24"
+      id="contact"
+      className={`contact-section ${standalone ? '' : 'section-space page-width'}`}
     >
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center">
-          <div className="flex items-center justify-center gap-2.5">
-            <div className="w-[30px] h-0.5 bg-gold" />
-            <span className="text-xs font-semibold tracking-[3px] text-gold">GET IN TOUCH</span>
-            <div className="w-[30px] h-0.5 bg-gold" />
+      {!standalone && (
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Start with a conversation</p>
+            <h2>
+              Your floor.
+              <br />
+              <span className="gold">Our next conversation.</span>
+            </h2>
           </div>
-          <h2 className="mt-4 text-3xl lg:text-[42px] font-extrabold text-white leading-tight">
-            Contact Us
-          </h2>
-          <p className="mt-4 text-[15px] leading-relaxed text-muted-soft">
-            Get a free estimate today — we'll respond within 24 hours
+          <p>
+            A few details help us understand your space. Choose the way you
+            would like to get in touch.
           </p>
         </div>
-
-        <div className="mt-10 lg:mt-14 flex flex-col lg:flex-row items-start gap-10 lg:gap-[60px]">
-          <div className="w-full lg:flex-[4]">
-            <ContactInfo />
-          </div>
-          <div className="w-full lg:flex-[6]">
-            <ContactForm
-              form={form}
-              errors={errors}
-              sending={sending}
-              feedback={feedback}
-              onChange={handleChange}
-              onSubmit={handleSubmit}
-            />
+      )}
+      <div className="contact-layout">
+        <div className="contact-details">
+          <h2>
+            Let’s talk about
+            <br />
+            your project.
+          </h2>
+          <p>
+            Tell us where you are, what the surface looks like today, and how
+            you want to use it. If you have photos, you can attach them in your
+            email or WhatsApp conversation.
+          </p>
+          <a className="contact-method" href={site.phoneHref}>
+            <Phone aria-hidden="true" />
+            <span>
+              <small>Call SMA</small>
+              <strong>{site.phone}</strong>
+            </span>
+          </a>
+          <a className="contact-method" href={`mailto:${site.email}`}>
+            <Mail aria-hidden="true" />
+            <span>
+              <small>Email SMA</small>
+              <strong>{site.email}</strong>
+            </span>
+          </a>
+          <a
+            className="button button-outline"
+            href={site.whatsapp}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Chat on WhatsApp <ArrowUpRight size={18} aria-hidden="true" />
+          </a>
+          <div className="contact-area">
+            <h3>Serving the GTA</h3>
+            <p>{site.cities.join(' · ')}</p>
+            <a
+              className="text-link"
+              href={site.maps}
+              target="_blank"
+              rel="noreferrer"
+            >
+              View our Google Business Profile ↗
+            </a>
           </div>
         </div>
+        <noscript>
+          <style>{`.quote-form { display: none !important; }`}</style>
+          <p className="form-note">
+            Call, email or open WhatsApp using the contact links to discuss your
+            project. The enquiry composer requires JavaScript.
+          </p>
+        </noscript>
+        <form
+          method="post"
+          action={`mailto:${site.email}`}
+          encType="text/plain"
+          className="quote-form"
+          ref={formRef}
+          onSubmit={email}
+          noValidate
+        >
+          <h2>Prepare your enquiry</h2>
+          <p className="form-note">
+            Complete the details, then send through your email app or WhatsApp.
+            Fields marked * are required.
+          </p>
+          <div className="form-grid">
+            {[
+              ['name', 'Full name', 'text', 'name', true],
+              ['email', 'Email address', 'email', 'email', true],
+              ['phone', 'Phone number', 'tel', 'tel', false],
+            ].map(([name, label, type, autoComplete, required]) => (
+              <div className="form-field" key={name}>
+                <label htmlFor={`quote-${name}`}>
+                  {label}
+                  {required ? ' *' : ' (optional)'}
+                </label>
+                <input
+                  id={`quote-${name}`}
+                  name={name}
+                  type={type}
+                  autoComplete={autoComplete}
+                  required={required}
+                  maxLength={150}
+                  value={form[name]}
+                  onChange={change}
+                  aria-invalid={!!errors[name]}
+                  aria-describedby={errors[name] ? `error-${name}` : undefined}
+                />
+                {errors[name] && (
+                  <p id={`error-${name}`} className="field-error">
+                    {errors[name]}
+                  </p>
+                )}
+              </div>
+            ))}
+            <div className="form-field">
+              <label htmlFor="quote-city">Project city (optional)</label>
+              <select
+                id="quote-city"
+                name="city"
+                value={form.city}
+                onChange={change}
+              >
+                <option value="">Select your city</option>
+                {site.cities.map((c) => (
+                  <option key={c}>{c}</option>
+                ))}
+                <option>Another location — please ask</option>
+              </select>
+            </div>
+            <div className="form-field full">
+              <label htmlFor="quote-service">Service (optional)</label>
+              <select
+                id="quote-service"
+                name="service"
+                value={form.service}
+                onChange={change}
+              >
+                <option value="">Help me choose</option>
+                {services.map((s) => (
+                  <option key={s.slug}>{s.title}</option>
+                ))}
+              </select>
+            </div>
+            <div className="form-field full">
+              <label htmlFor="quote-message">About your project *</label>
+              <textarea
+                id="quote-message"
+                name="message"
+                rows={5}
+                required
+                maxLength={3000}
+                value={form.message}
+                onChange={change}
+                placeholder="For example: a two-car garage in Oakville, bare concrete with a few cracks. We’d like a grey flake finish."
+                aria-invalid={!!errors.message}
+                aria-describedby={
+                  errors.message ? 'error-message' : 'message-hint'
+                }
+              />
+              <p id="message-hint" className="form-note">
+                Approximate size, current condition and your preferred finish
+                are helpful.
+              </p>
+              {errors.message && (
+                <p id="error-message" className="field-error">
+                  {errors.message}
+                </p>
+              )}
+            </div>
+          </div>
+          <div className="form-actions">
+            <button type="submit" className="button button-gold">
+              Open email draft <ArrowUpRight size={17} aria-hidden="true" />
+            </button>
+            <a
+              className="button button-outline"
+              href={makeWhatsAppLink(form)}
+              target="_blank"
+              rel="noreferrer"
+              onClick={(e) => {
+                if (!validate()) e.preventDefault()
+                else
+                  setFeedback(
+                    'Finish sending your enquiry in WhatsApp. Your details remain here.',
+                  )
+              }}
+            >
+              Open in WhatsApp
+            </a>
+            <button type="button" className="copy-button" onClick={copy}>
+              {copied ? <Check size={16} /> : <Copy size={16} />}{' '}
+              {copied ? 'Copied' : 'Copy details'}
+            </button>
+          </div>
+          <p role="status" aria-live="polite" className="form-feedback">
+            {feedback}
+          </p>
+          <p className="form-note">
+            Your enquiry is shared when you send it through your chosen app.{' '}
+            <a href="/privacy/">How your details are used</a>.
+          </p>
+        </form>
       </div>
     </section>
-  )
-}
-
-function ContactInfo() {
-  return (
-    <div>
-      <h3 className="text-[26px] font-extrabold text-white leading-[1.3]">
-        Let's Talk About
-        <br />
-        Your Project
-      </h3>
-      <p className="mt-4 text-sm leading-[1.7] text-muted-soft">
-        Ready to transform your space? Contact us for a free consultation and estimate.
-      </p>
-
-      <div className="mt-9 space-y-5">
-        <ContactItem
-          icon={<Phone size={18} className="text-gold" />}
-          title="Phone"
-          value="+1 (647) 712-0706"
-          href="tel:+16477120706"
-        />
-        <ContactItem
-          icon={<Mail size={18} className="text-gold" />}
-          title="Email"
-          value="smasolutaions@gmail.com"
-          href="mailto:smasolutaions@gmail.com"
-        />
-        <ContactItem
-          icon={<MapPin size={18} className="text-gold" />}
-          title="Location"
-          value="Ontario, Canada"
-          href="https://maps.app.goo.gl/1cvX34grGMmmZcRs6"
-        />
-      </div>
-
-      <a
-        href="https://wa.me/16477120706"
-        target="_blank"
-        rel="noreferrer"
-        className="mt-9 w-full flex items-center justify-center gap-2 bg-[#25D366] text-white font-extrabold text-[13px] tracking-wider py-4 rounded-sm hover:brightness-105 transition"
-      >
-        <img src="/assets/icons/whatsapp.svg" alt="" loading="lazy" decoding="async" className="w-4 h-4" />
-        CHAT ON WHATSAPP
-      </a>
-
-      <p className="mt-9 text-[11px] font-semibold tracking-[2px] text-muted-faint">FOLLOW US</p>
-      <div className="mt-4 flex items-center gap-3">
-        <SocialButton
-          href="https://www.instagram.com/sma_surface_solution?igsh=MTM5a3d0a210MDVyMA=="
-          icon={<Camera size={16} className="text-gold" />}
-          label="Instagram"
-        />
-        <SocialButton
-          href="https://www.facebook.com/share/1EGznWuMHm/?mibextid=wwXIfr"
-          icon={<Facebook size={16} className="text-gold" />}
-          label="Facebook"
-        />
-      </div>
-    </div>
-  )
-}
-
-function ContactItem({ icon, title, value, href }) {
-  return (
-    <a href={href} target="_blank" rel="noreferrer" className="flex items-center gap-3.5 group">
-      <div className="w-11 h-11 flex items-center justify-center bg-[#1A1A1A] border border-border rounded-sm group-hover:border-gold transition">
-        {icon}
-      </div>
-      <div>
-        <p className="text-[11px] tracking-wide text-muted-faint">{title}</p>
-        <p className="text-sm font-semibold text-white">{value}</p>
-      </div>
-    </a>
-  )
-}
-
-function SocialButton({ href, icon, label }) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noreferrer"
-      className="flex items-center gap-2 border border-border rounded-sm bg-[#141414] px-4 py-2.5 hover:border-gold transition"
-    >
-      {icon}
-      <span className="text-xs font-medium text-white">{label}</span>
-    </a>
-  )
-}
-
-function ContactForm({ form, errors, sending, feedback, onChange, onSubmit }) {
-  return (
-    <div className="bg-panel border border-border rounded p-7 lg:p-9">
-      <h3 className="text-xl font-bold text-white">Send Us a Message</h3>
-
-      <form onSubmit={onSubmit} className="mt-7 space-y-4">
-        <div className="flex flex-col sm:flex-row gap-4">
-          <Field
-            label="Full Name"
-            placeholder="John Doe"
-            icon={<User size={18} className="text-muted-faint" />}
-            value={form.name}
-            onChange={onChange('name')}
-            error={errors.name}
-          />
-          <Field
-            label="Phone Number"
-            placeholder="+1 (647) ..."
-            icon={<Phone size={18} className="text-muted-faint" />}
-            value={form.phone}
-            onChange={onChange('phone')}
-          />
-        </div>
-
-        <Field
-          label="Email Address"
-          placeholder="you@example.com"
-          icon={<Mail size={18} className="text-muted-faint" />}
-          value={form.email}
-          onChange={onChange('email')}
-          error={errors.email}
-        />
-
-        <Field
-          label="Message"
-          placeholder="Tell us about your project..."
-          icon={<MessageSquare size={18} className="text-muted-faint" />}
-          value={form.message}
-          onChange={onChange('message')}
-          error={errors.message}
-          textarea
-        />
-
-        <button
-          type="submit"
-          disabled={sending}
-          className="w-full bg-gold text-black font-extrabold text-[13px] tracking-wider py-[18px] rounded-sm hover:brightness-110 transition disabled:opacity-60"
-        >
-          {sending ? 'SENDING...' : 'SEND MESSAGE'}
-        </button>
-
-        {feedback && (
-          <p
-            className={`text-sm text-center rounded-sm py-2 ${
-              feedback.type === 'success' ? 'bg-[#4CAF50]/15 text-[#4CAF50]' : 'bg-[#E53935]/15 text-[#E53935]'
-            }`}
-          >
-            {feedback.text}
-          </p>
-        )}
-      </form>
-    </div>
-  )
-}
-
-function Field({ label, placeholder, icon, value, onChange, error, textarea }) {
-  const baseClasses =
-    'w-full bg-[#1A1A1A] border rounded-sm text-sm text-white placeholder:text-[#404040] px-3.5 py-3 focus:outline-none focus:border-gold transition'
-  return (
-    <div className="flex-1">
-      <label className="block text-[13px] text-muted-faint mb-1.5">{label}</label>
-      <div className="relative">
-        {!textarea && (
-          <span className="absolute left-3 top-1/2 -translate-y-1/2">{icon}</span>
-        )}
-        {textarea ? (
-          <textarea
-            rows={5}
-            placeholder={placeholder}
-            value={value}
-            onChange={onChange}
-            className={`${baseClasses} ${error ? 'border-[#E53935]' : 'border-border'}`}
-          />
-        ) : (
-          <input
-            type="text"
-            placeholder={placeholder}
-            value={value}
-            onChange={onChange}
-            className={`${baseClasses} pl-10 ${error ? 'border-[#E53935]' : 'border-border'}`}
-          />
-        )}
-      </div>
-      {error && <p className="mt-1 text-xs text-[#E53935]">{error}</p>}
-    </div>
   )
 }

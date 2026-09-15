@@ -1,0 +1,3 @@
+# Existing visual system
+
+Preserve black #0A0A0A, warm gold #D4A017, white headings, high-contrast muted text, Inter typography, large confident headings, authentic floor imagery and restrained rounded shapes. Hero remains a full-width photographic composition with quote and project actions. New service surfaces persuade through specific copy and photos; blog surfaces use readable editorial text with a table of contents and related reading. Prioritize generous spacing, visible focus, conventional links and complete static content. Avoid repetitive decorative icon cards and fabricated trust metrics.

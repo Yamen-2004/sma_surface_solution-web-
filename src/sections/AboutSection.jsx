@@ -1,8 +1,10 @@
+import ResponsiveImage from '../components/ResponsiveImage.jsx'
 const FEATURES = [
   {
     icon: '/assets/icons/star.svg',
     title: 'High Quality Materials',
-    description: 'We use top-tier epoxy products that provide exceptional durability.',
+    description:
+      'We use top-tier epoxy products that provide exceptional durability.',
   },
   {
     icon: '/assets/icons/experinced_team.svg',
@@ -25,6 +27,7 @@ export default function AboutSection({ sectionRef }) {
   return (
     <section
       ref={sectionRef}
+      id="about"
       className="w-full bg-base px-5 md:px-10 lg:px-20 py-16 lg:py-20"
     >
       <div className="max-w-7xl mx-auto">
@@ -36,7 +39,7 @@ export default function AboutSection({ sectionRef }) {
 
           <div className="lg:flex-[5] flex flex-col lg:flex-row items-start gap-5 w-full">
             <div className="lg:flex-[5] w-full">
-              <img
+              <ResponsiveImage
                 src="/assets/images/about.png"
                 alt="Front porch steps finished with grey speckled epoxy coating"
                 width={453}
@@ -75,12 +78,12 @@ function MainContent() {
       </h2>
 
       <p className="mt-5 text-lg font-medium text-white">
-        Your trusted epoxy flooring experts in Ontario.
+        Floor coating services across the GTA.
       </p>
 
       <p className="mt-5 text-sm leading-[1.8] text-muted">
-        We are dedicated to providing high-quality, durable, and beautiful epoxy flooring
-        solutions for homes, garages, basements, and commercial spaces.
+        We are dedicated to providing high-quality, durable, and beautiful epoxy
+        flooring solutions for homes, garages, basements, and commercial spaces.
       </p>
     </div>
   )
@@ -91,19 +94,21 @@ function WhoWeAreCard() {
     <div>
       <div className="flex items-center gap-2">
         <div className="w-7 h-0.5 bg-gold" />
-        <span className="text-[10px] font-bold tracking-[1.5px] text-gold">OUR STORY</span>
+        <span className="text-[10px] font-bold tracking-[1.5px] text-gold">
+          OUR STORY
+        </span>
       </div>
 
       <h3 className="mt-4 text-[28px] font-extrabold text-white">Who We Are</h3>
 
       <p className="mt-4 text-[13px] leading-[1.8] text-muted">
-        At SMA Surface Solutions, we specialize in delivering premium epoxy flooring systems
-        that are built to last.
+        At SMA Surface Solutions, we specialize in delivering premium epoxy
+        flooring systems that are built to last.
       </p>
 
       <p className="mt-[18px] text-[13px] leading-[1.8] text-muted">
-        From garages to commercial facilities, we transform ordinary concrete into stunning
-        surfaces.
+        From garages to commercial facilities, we transform ordinary concrete
+        into stunning surfaces.
       </p>
     </div>
   )
@@ -112,9 +117,13 @@ function WhoWeAreCard() {
 function Features() {
   return (
     <div className="text-center">
-      <p className="text-[10px] tracking-[2px] font-bold text-gold">WHY CHOOSE US</p>
+      <p className="text-[10px] tracking-[2px] font-bold text-gold">
+        WHY CHOOSE US
+      </p>
       <div className="mt-2.5 w-[100px] h-px bg-gold mx-auto" />
-      <h3 className="mt-3.5 text-[28px] font-extrabold text-white">Quality You Can Count On</h3>
+      <h3 className="mt-3.5 text-[28px] font-extrabold text-white">
+        Quality You Can Count On
+      </h3>
 
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[18px]">
         {FEATURES.map((f) => (
@@ -135,7 +144,9 @@ function FeatureCard({ icon, title, description }) {
         decoding="async"
         className="w-[70px] h-[70px] lg:w-[100px] lg:h-[100px] object-contain"
       />
-      <p className="mt-3 text-sm lg:text-[15px] font-bold text-white text-center">{title}</p>
+      <p className="mt-3 text-sm lg:text-[15px] font-bold text-white text-center">
+        {title}
+      </p>
       <p className="mt-2.5 text-[11px] lg:text-xs leading-[1.6] text-muted text-center">
         {description}
       </p>

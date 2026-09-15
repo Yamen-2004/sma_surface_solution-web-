@@ -1,0 +1,146 @@
+{
+  "/assets/images/about.png": {
+    "src": "/assets/optimized/about-8b331538a95e-453.webp",
+    "width": 453,
+    "height": 342,
+    "srcSet": "/assets/optimized/about-8b331538a95e-453.webp 453w"
+  },
+  "/assets/images/background.webp": {
+    "src": "/assets/optimized/background-b9623b24ea1f-960.webp",
+    "width": 960,
+    "height": 430,
+    "srcSet": "/assets/optimized/background-b9623b24ea1f-480.webp 480w, /assets/optimized/background-b9623b24ea1f-960.webp 960w, /assets/optimized/background-b9623b24ea1f-1600.webp 1600w"
+  },
+  "/assets/images/basement-epoxy-flooring.png": {
+    "src": "/assets/optimized/basement-epoxy-flooring-ec9901c57266-800.webp",
+    "width": 800,
+    "height": 800,
+    "srcSet": "/assets/optimized/basement-epoxy-flooring-ec9901c57266-480.webp 480w, /assets/optimized/basement-epoxy-flooring-ec9901c57266-800.webp 800w"
+  },
+  "/assets/images/commercial-epoxy-flooring.jpg": {
+    "src": "/assets/optimized/commercial-epoxy-flooring-14775105e8cb-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcSet": "/assets/optimized/commercial-epoxy-flooring-14775105e8cb-480.webp 480w, /assets/optimized/commercial-epoxy-flooring-14775105e8cb-960.webp 960w, /assets/optimized/commercial-epoxy-flooring-14775105e8cb-1600.webp 1600w"
+  },
+  "/assets/images/flake-epoxy-garages.webp": {
+    "src": "/assets/optimized/flake-epoxy-garages-db96027ba8d3-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcSet": "/assets/optimized/flake-epoxy-garages-db96027ba8d3-480.webp 480w, /assets/optimized/flake-epoxy-garages-db96027ba8d3-960.webp 960w, /assets/optimized/flake-epoxy-garages-db96027ba8d3-1500.webp 1500w"
+  },
+  "/assets/images/garage-epoxy-flooring.webp": {
+    "src": "/assets/optimized/garage-epoxy-flooring-5f037c406b3f-960.webp",
+    "width": 960,
+    "height": 641,
+    "srcSet": "/assets/optimized/garage-epoxy-flooring-5f037c406b3f-480.webp 480w, /assets/optimized/garage-epoxy-flooring-5f037c406b3f-960.webp 960w, /assets/optimized/garage-epoxy-flooring-5f037c406b3f-1535.webp 1535w"
+  },
+  "/assets/images/logo.png": {
+    "src": "/assets/optimized/logo-7a61831e1792-210.webp",
+    "width": 210,
+    "height": 91,
+    "srcSet": "/assets/optimized/logo-7a61831e1792-210.webp 210w"
+  },
+  "/assets/images/logo2.png": {
+    "src": "/assets/optimized/logo2-500.webp",
+    "width": 500,
+    "height": 179,
+    "srcSet": "/assets/optimized/logo2-320.webp 320w, /assets/optimized/logo2-500.webp 500w"
+  },
+  "/assets/images/polyaspartic-garage-flooring.webp": {
+    "src": "/assets/optimized/polyaspartic-garage-flooring-dd8f3a817b4e-960.webp",
+    "width": 960,
+    "height": 640,
+    "srcSet": "/assets/optimized/polyaspartic-garage-flooring-dd8f3a817b4e-480.webp 480w, /assets/optimized/polyaspartic-garage-flooring-dd8f3a817b4e-960.webp 960w, /assets/optimized/polyaspartic-garage-flooring-dd8f3a817b4e-1536.webp 1536w"
+  },
+  "/assets/images/porch-front-steps-coating.jpg": {
+    "src": "/assets/optimized/porch-front-steps-coating-64c454b8cac8-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcSet": "/assets/optimized/porch-front-steps-coating-64c454b8cac8-480.webp 480w, /assets/optimized/porch-front-steps-coating-64c454b8cac8-960.webp 960w, /assets/optimized/porch-front-steps-coating-64c454b8cac8-1440.webp 1440w"
+  },
+  "/assets/projects/project_five_after.webp": {
+    "src": "/assets/optimized/project_five_after-35c92ed45b48-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/project_five_after-35c92ed45b48-480.webp 480w, /assets/optimized/project_five_after-35c92ed45b48-960.webp 960w, /assets/optimized/project_five_after-35c92ed45b48-1600.webp 1600w"
+  },
+  "/assets/projects/project_five_before.webp": {
+    "src": "/assets/optimized/project_five_before-5ce4565cd4f8-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/project_five_before-5ce4565cd4f8-480.webp 480w, /assets/optimized/project_five_before-5ce4565cd4f8-960.webp 960w, /assets/optimized/project_five_before-5ce4565cd4f8-1600.webp 1600w"
+  },
+  "/assets/projects/project_four_after.jpeg": {
+    "src": "/assets/optimized/project_four_after-79fb55de34f2-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcSet": "/assets/optimized/project_four_after-79fb55de34f2-480.webp 480w, /assets/optimized/project_four_after-79fb55de34f2-960.webp 960w, /assets/optimized/project_four_after-79fb55de34f2-1600.webp 1600w"
+  },
+  "/assets/projects/project_four_before.jpeg": {
+    "src": "/assets/optimized/project_four_before-6324ae9bb41f-960.webp",
+    "width": 960,
+    "height": 1280,
+    "srcSet": "/assets/optimized/project_four_before-6324ae9bb41f-480.webp 480w, /assets/optimized/project_four_before-6324ae9bb41f-960.webp 960w, /assets/optimized/project_four_before-6324ae9bb41f-1200.webp 1200w"
+  },
+  "/assets/projects/project_one_after.jpeg": {
+    "src": "/assets/optimized/project_one_after-2eb44653870f-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/project_one_after-2eb44653870f-480.webp 480w, /assets/optimized/project_one_after-2eb44653870f-960.webp 960w, /assets/optimized/project_one_after-2eb44653870f-1496.webp 1496w"
+  },
+  "/assets/projects/project_one_before.jpeg": {
+    "src": "/assets/optimized/project_one_before-13e562748a01-960.webp",
+    "width": 960,
+    "height": 1280,
+    "srcSet": "/assets/optimized/project_one_before-13e562748a01-480.webp 480w, /assets/optimized/project_one_before-13e562748a01-960.webp 960w, /assets/optimized/project_one_before-13e562748a01-1200.webp 1200w"
+  },
+  "/assets/projects/project_seven_after.webp": {
+    "src": "/assets/optimized/project_seven_after-c6d4eca874cd-960.webp",
+    "width": 960,
+    "height": 1442,
+    "srcSet": "/assets/optimized/project_seven_after-c6d4eca874cd-480.webp 480w, /assets/optimized/project_seven_after-c6d4eca874cd-960.webp 960w, /assets/optimized/project_seven_after-c6d4eca874cd-1023.webp 1023w"
+  },
+  "/assets/projects/project_seven_before.jpeg": {
+    "src": "/assets/optimized/project_seven_before-d1e0db42c98b-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/project_seven_before-d1e0db42c98b-480.webp 480w, /assets/optimized/project_seven_before-d1e0db42c98b-960.webp 960w, /assets/optimized/project_seven_before-d1e0db42c98b-1600.webp 1600w"
+  },
+  "/assets/projects/project_six_after.jpeg": {
+    "src": "/assets/optimized/project_six_after-321272e902c4-720.webp",
+    "width": 720,
+    "height": 775,
+    "srcSet": "/assets/optimized/project_six_after-321272e902c4-480.webp 480w, /assets/optimized/project_six_after-321272e902c4-720.webp 720w"
+  },
+  "/assets/projects/project_six_before.webp": {
+    "src": "/assets/optimized/project_six_before-7b28b7919bf6-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/project_six_before-7b28b7919bf6-480.webp 480w, /assets/optimized/project_six_before-7b28b7919bf6-960.webp 960w, /assets/optimized/project_six_before-7b28b7919bf6-1600.webp 1600w"
+  },
+  "/assets/projects/project_three_after.jpeg": {
+    "src": "/assets/optimized/project_three_after-13b218770b10-960.webp",
+    "width": 960,
+    "height": 720,
+    "srcSet": "/assets/optimized/project_three_after-13b218770b10-480.webp 480w, /assets/optimized/project_three_after-13b218770b10-960.webp 960w, /assets/optimized/project_three_after-13b218770b10-1600.webp 1600w"
+  },
+  "/assets/projects/project_three_before.jpeg": {
+    "src": "/assets/optimized/project_three_before-428482ff0636-960.webp",
+    "width": 960,
+    "height": 1280,
+    "srcSet": "/assets/optimized/project_three_before-428482ff0636-480.webp 480w, /assets/optimized/project_three_before-428482ff0636-960.webp 960w, /assets/optimized/project_three_before-428482ff0636-1200.webp 1200w"
+  },
+  "/assets/projects/project_two_after.jpeg": {
+    "src": "/assets/optimized/project_two_after-af4a167a82be-960.webp",
+    "width": 960,
+    "height": 1280,
+    "srcSet": "/assets/optimized/project_two_after-af4a167a82be-480.webp 480w, /assets/optimized/project_two_after-af4a167a82be-960.webp 960w, /assets/optimized/project_two_after-af4a167a82be-1200.webp 1200w"
+  },
+  "/assets/projects/project_two_before.jpeg": {
+    "src": "/assets/optimized/project_two_before-0c20517031b2-960.webp",
+    "width": 960,
+    "height": 1280,
+    "srcSet": "/assets/optimized/project_two_before-0c20517031b2-480.webp 480w, /assets/optimized/project_two_before-0c20517031b2-960.webp 960w, /assets/optimized/project_two_before-0c20517031b2-1200.webp 1200w"
+  }
+}
