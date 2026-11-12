@@ -26,7 +26,7 @@ export const routes = [
     type: 'services',
     title: 'Epoxy Flooring & Concrete Coating Services',
     description:
-      'Find the right coating for your garage, basement, porch or commercial floor. Explore six flooring services from SMA Surface Solutions in the GTA.',
+      'Find the right coating for your garage, basement, porch or commercial floor. Explore the flooring services offered by SMA Surface Solutions in the GTA.',
   },
   {
     path: '/service-areas/',
@@ -47,7 +47,7 @@ export const routes = [
     type: 'projects',
     title: 'Epoxy Flooring Before & After Projects',
     description:
-      'See seven before-and-after flooring transformations from SMA Surface Solutions, including garages, entry steps, a balcony and a walkway.',
+      'See eight before-and-after flooring transformations from SMA Surface Solutions, including garages, entry steps, a balcony, a walkway and an industrial corridor.',
   },
   {
     path: '/about/',

@@ -23,6 +23,12 @@
     "height": 720,
     "srcSet": "/assets/optimized/commercial-epoxy-flooring-14775105e8cb-480.webp 480w, /assets/optimized/commercial-epoxy-flooring-14775105e8cb-960.webp 960w, /assets/optimized/commercial-epoxy-flooring-14775105e8cb-1600.webp 1600w"
   },
+  "/assets/images/concrete-repair-and-new-slabs.png": {
+    "src": "/assets/optimized/concrete-repair-and-new-slabs-69d94ce67469-307.webp",
+    "width": 307,
+    "height": 434,
+    "srcSet": "/assets/optimized/concrete-repair-and-new-slabs-69d94ce67469-307.webp 307w"
+  },
   "/assets/images/flake-epoxy-garages.webp": {
     "src": "/assets/optimized/flake-epoxy-garages-db96027ba8d3-960.webp",
     "width": 960,
@@ -34,6 +40,12 @@
     "width": 960,
     "height": 641,
     "srcSet": "/assets/optimized/garage-epoxy-flooring-5f037c406b3f-480.webp 480w, /assets/optimized/garage-epoxy-flooring-5f037c406b3f-960.webp 960w, /assets/optimized/garage-epoxy-flooring-5f037c406b3f-1535.webp 1535w"
+  },
+  "/assets/images/grind-and-seal-concrete.png": {
+    "src": "/assets/optimized/grind-and-seal-concrete-ca9049fb73f0-327.webp",
+    "width": 327,
+    "height": 504,
+    "srcSet": "/assets/optimized/grind-and-seal-concrete-ca9049fb73f0-327.webp 327w"
   },
   "/assets/images/logo.png": {
     "src": "/assets/optimized/logo-7a61831e1792-210.webp",
@@ -47,17 +59,47 @@
     "height": 179,
     "srcSet": "/assets/optimized/logo2-320.webp 320w, /assets/optimized/logo2-500.webp 500w"
   },
+  "/assets/images/polished-concrete-flooring.png": {
+    "src": "/assets/optimized/polished-concrete-flooring-bc33d9acedcb-332.webp",
+    "width": 332,
+    "height": 396,
+    "srcSet": "/assets/optimized/polished-concrete-flooring-bc33d9acedcb-332.webp 332w"
+  },
   "/assets/images/polyaspartic-garage-flooring.webp": {
     "src": "/assets/optimized/polyaspartic-garage-flooring-dd8f3a817b4e-960.webp",
     "width": 960,
     "height": 640,
     "srcSet": "/assets/optimized/polyaspartic-garage-flooring-dd8f3a817b4e-480.webp 480w, /assets/optimized/polyaspartic-garage-flooring-dd8f3a817b4e-960.webp 960w, /assets/optimized/polyaspartic-garage-flooring-dd8f3a817b4e-1536.webp 1536w"
   },
+  "/assets/images/polyurethane-cement-flooring.png": {
+    "src": "/assets/optimized/polyurethane-cement-flooring-90ffe0f7c040-341.webp",
+    "width": 341,
+    "height": 415,
+    "srcSet": "/assets/optimized/polyurethane-cement-flooring-90ffe0f7c040-341.webp 341w"
+  },
   "/assets/images/porch-front-steps-coating.jpg": {
     "src": "/assets/optimized/porch-front-steps-coating-64c454b8cac8-960.webp",
     "width": 960,
     "height": 720,
     "srcSet": "/assets/optimized/porch-front-steps-coating-64c454b8cac8-480.webp 480w, /assets/optimized/porch-front-steps-coating-64c454b8cac8-960.webp 960w, /assets/optimized/porch-front-steps-coating-64c454b8cac8-1440.webp 1440w"
+  },
+  "/assets/images/safety-lines-and-marking.jpg": {
+    "src": "/assets/optimized/safety-lines-and-marking-8295854c989a-960.webp",
+    "width": 960,
+    "height": 1034,
+    "srcSet": "/assets/optimized/safety-lines-and-marking-8295854c989a-480.webp 480w, /assets/optimized/safety-lines-and-marking-8295854c989a-960.webp 960w, /assets/optimized/safety-lines-and-marking-8295854c989a-1207.webp 1207w"
+  },
+  "/assets/projects/project_eight_after.png": {
+    "src": "/assets/optimized/project_eight_after-d10466129ca7-307.webp",
+    "width": 307,
+    "height": 434,
+    "srcSet": "/assets/optimized/project_eight_after-d10466129ca7-307.webp 307w"
+  },
+  "/assets/projects/project_eight_before.png": {
+    "src": "/assets/optimized/project_eight_before-e5100174ebb3-307.webp",
+    "width": 307,
+    "height": 434,
+    "srcSet": "/assets/optimized/project_eight_before-e5100174ebb3-307.webp 307w"
   },
   "/assets/projects/project_five_after.webp": {
     "src": "/assets/optimized/project_five_after-35c92ed45b48-960.webp",

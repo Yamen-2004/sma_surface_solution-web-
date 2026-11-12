@@ -1,6 +1,6 @@
 # SMA Surface Solutions
 
-Local React + Vite + Tailwind website for SMA Surface Solutions. The production build generates 39 complete HTML pages: the main pages, six services, five service areas, twelve flooring guides and a questions hub and seven before-and-after project pages.
+Local React + Vite + Tailwind website for SMA Surface Solutions. The production build generates 45 complete HTML pages: the main pages, eleven services, five service areas, twelve flooring guides and a questions hub and eight before-and-after project pages.
 
 ## Run locally
 

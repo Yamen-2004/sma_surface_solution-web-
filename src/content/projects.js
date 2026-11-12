@@ -108,4 +108,21 @@ export const projects = [
       'Use this example alongside the lighter finishes in the project gallery when discussing colour preferences. An estimate for your entrance should also address the existing surface and the exact steps, landing and edges you want included.',
     ],
   },
+  {
+    slug: 'industrial-corridor-crack-repair',
+    title: 'Industrial corridor crack repair',
+    description:
+      'A cracked, worn industrial corridor floor shown before work and after crack repair and epoxy coating.',
+    before: '/assets/projects/project_eight_before.png',
+    after: '/assets/projects/project_eight_after.png',
+    beforeAlt:
+      'Cracked and worn concrete floor with a hose and a diamond-plate threshold in an industrial corridor',
+    afterAlt:
+      'Smooth grey floor with yellow lines at the same diamond-plate threshold',
+    serviceSlug: 'concrete-repair-and-new-slabs',
+    paragraphs: [
+      'The before photograph shows a worn, cracked concrete floor in an industrial corridor, with a hose lying across the surface and a diamond-plate threshold at the end. The after photograph shows the same threshold with a smooth grey floor and yellow lines. The portfolio labels this work as crack repair and epoxy coating.',
+      'If your floor has cracks or worn areas, send wide and close photographs, the approximate size and details of how the floor is used. That helps start a conversation about assessment and what repair or coating scope should be discussed.',
+    ],
+  },
 ]
