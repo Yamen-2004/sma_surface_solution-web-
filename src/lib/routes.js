@@ -47,7 +47,7 @@ export const routes = [
     type: 'projects',
     title: 'Epoxy Flooring Before & After Projects',
     description:
-      'See eight before-and-after flooring transformations from SMA Surface Solutions, including garages, entry steps, a balcony, a walkway and an industrial corridor.',
+      'See twelve before-and-after flooring transformations from SMA Surface Solutions, including garages, entry steps, a balcony, a walkway and commercial floors.',
   },
   {
     path: '/about/',

@@ -112,17 +112,85 @@ export const projects = [
     slug: 'industrial-corridor-crack-repair',
     title: 'Industrial corridor crack repair',
     description:
-      'A cracked, worn industrial corridor floor shown before work and after crack repair and epoxy coating.',
+      'A cracked, stained industrial corridor floor shown before work and after crack repair and epoxy coating.',
     before: '/assets/projects/project_eight_before.png',
     after: '/assets/projects/project_eight_after.png',
     beforeAlt:
-      'Cracked and worn concrete floor with a hose and a diamond-plate threshold in an industrial corridor',
+      'Cracked, stained concrete floor with a hose, a yellow guardrail and a diamond-plate threshold',
     afterAlt:
-      'Smooth grey floor with yellow lines at the same diamond-plate threshold',
+      'Glossy grey floor with light reflections at the same diamond-plate threshold',
     serviceSlug: 'concrete-repair-and-new-slabs',
     paragraphs: [
-      'The before photograph shows a worn, cracked concrete floor in an industrial corridor, with a hose lying across the surface and a diamond-plate threshold at the end. The after photograph shows the same threshold with a smooth grey floor and yellow lines. The portfolio labels this work as crack repair and epoxy coating.',
+      'The before photograph shows a cracked, stained concrete floor in an industrial corridor, with a hose across the surface, a yellow guardrail and a diamond-plate threshold. The after photograph shows the same threshold with a glossy grey floor. The portfolio labels this work as crack repair and epoxy coating.',
       'If your floor has cracks or worn areas, send wide and close photographs, the approximate size and details of how the floor is used. That helps start a conversation about assessment and what repair or coating scope should be discussed.',
+    ],
+  },
+  {
+    slug: 'warehouse-grind-and-seal-floor',
+    title: 'Warehouse grind and seal floor',
+    description:
+      'A warehouse aisle floor shown before work and after a grind and seal system.',
+    before: '/assets/projects/project_nine_before.png',
+    after: '/assets/projects/project_nine_after.png',
+    beforeAlt:
+      'Dull, patchy concrete floor in a warehouse aisle with orange racking and a forklift at the far end',
+    afterAlt:
+      'Smooth grey floor with light reflections in the same warehouse aisle',
+    serviceSlug: 'grind-and-seal-concrete',
+    paragraphs: [
+      'The before photograph shows a dull, patchy concrete floor in a warehouse aisle, with orange racking and a forklift at the far end. The after photograph shows the same aisle with a smoother grey surface that reflects the lights. The portfolio labels this work as a grind and seal system.',
+      'For a similar space, describe how the floor is used, including equipment, spills and cleaning, and send photographs of the existing slab. That helps start a discussion about the condition of the concrete and the scope of a grind and seal system.',
+    ],
+  },
+  {
+    slug: 'corporate-head-office-decorative-floor',
+    title: 'Corporate head office decorative floor',
+    description:
+      'An open office floor shown plain grey before work and with a glossy finish and thin gold lines after.',
+    before: '/assets/projects/project_ten_before.png',
+    after: '/assets/projects/project_ten_after.png',
+    beforeAlt:
+      'Plain grey floor in an open office with glass doors and a green plant wall',
+    afterAlt:
+      'Glossy grey floor with thin gold lines in the same open office',
+    serviceSlug: 'metallic-marble-epoxy-flooring',
+    paragraphs: [
+      'The before photograph shows a plain grey floor in an open office, with glass doors and a green plant wall beyond. The after photograph shows the same space with a glossy finish and thin gold lines crossing the floor in a triangular pattern. The portfolio includes this work under the caption corporate head office.',
+      'If you are considering a decorative floor, bring images of the colours and effects you like and describe how the space is used. Ask what can be reproduced and how the look will be agreed before work begins.',
+    ],
+  },
+  {
+    slug: 'retail-aisle-polished-concrete-floor',
+    title: 'Retail aisle polished concrete floor',
+    description:
+      'A store aisle floor shown as dull concrete before work and as a smooth, reflective floor after polishing.',
+    before: '/assets/projects/project_eleven_before.png',
+    after: '/assets/projects/project_eleven_after.png',
+    beforeAlt:
+      'Dull grey concrete floor in a store aisle with shelving, a plant stand, a bucket and a hose',
+    afterAlt:
+      'Smooth grey concrete floor reflecting overhead lights in the same store aisle',
+    serviceSlug: 'polished-concrete-flooring',
+    paragraphs: [
+      'The before photograph shows a dull grey concrete floor in a store aisle, with shelving on both sides and a bucket and hose on the floor. The after photograph shows the same aisle with a smooth floor that reflects the overhead lights. With polished concrete, the existing slab becomes the finished floor.',
+      'If your space is a retail unit, showroom or office, send photographs of the existing slab and describe how the space is used. Ask what you can expect from your concrete and request examples of similar finished floors.',
+    ],
+  },
+  {
+    slug: 'food-and-beverage-production-floor',
+    title: 'Food and beverage production floor',
+    description:
+      'A production room floor shown as stained concrete before work and with an orange-red floor after.',
+    before: '/assets/projects/project_twelve_before.png',
+    after: '/assets/projects/project_twelve_after.png',
+    beforeAlt:
+      'Stained concrete floor with a floor drain beside stainless steel equipment in a glass-walled room',
+    afterAlt:
+      'Orange-red floor with a floor drain beside the same stainless steel equipment',
+    serviceSlug: 'polyurethane-cement-flooring',
+    paragraphs: [
+      'The before photograph shows a stained concrete floor in a glass-walled production room, with a floor drain and stainless steel equipment under plastic sheeting. The after photograph shows the same room with an orange-red floor. Food and beverage production is among the examples our portfolio lists for polyurethane cement flooring.',
+      'If your floor faces washdown, chemicals or temperature changes, describe those conditions and ask for documentation for any requirement you have. Show the drains, walls and equipment bases that meet the floor.',
     ],
   },
 ]

@@ -766,7 +766,7 @@ export const services = [
       'SMA Surface Solutions handles concrete crack and joint repair, other concrete repairs and new slab pours. Our portfolio shows repair work alongside new interior or exterior concrete slabs. Start with what the concrete needs, whether that is a repair to an existing floor or a new slab, and how you plan to use it.',
     image: '/assets/images/concrete-repair-and-new-slabs.png',
     imageAlt:
-      'Smooth grey floor with yellow lines meeting a diamond-plate threshold',
+      'Glossy grey floor with light reflections ending at a concrete strip and a diamond-plate threshold',
     sections: [
       {
         id: 'repairs-and-new-slabs',
@@ -826,6 +826,73 @@ export const services = [
       'choosing-epoxy-flooring-contractor-gta',
       'basement-epoxy-flooring-moisture',
       'peeling-garage-floor-coating-repair',
+    ],
+  },
+  {
+    slug: 'metallic-marble-epoxy-flooring',
+    title: 'Metallic and Marble Epoxy',
+    shortTitle: 'Metallic & Marble Epoxy',
+    description:
+      'Explore seamless metallic and marble epoxy flooring from SMA Surface Solutions, with decorative depth and movement for offices, showrooms and amenity spaces.',
+    intro:
+      'Metallic and marble epoxy is a seamless decorative flooring with metallic or marble-like effects, depth and movement. SMA Surface Solutions offers it for spaces where the floor is part of the design. Examples include offices, showrooms and amenity spaces. Start with the look you want and the space the floor will serve.',
+    image: '/assets/images/metallic-marble-epoxy-flooring.png',
+    imageAlt:
+      'Glossy grey floor with thin gold lines in a triangular pattern in front of glass doors and a green plant wall',
+    sections: [
+      {
+        id: 'seamless-decorative-epoxy',
+        heading: 'Seamless decorative epoxy',
+        paragraphs: [
+          'Metallic and marble epoxy flooring is a seamless decorative finish. The effects can look metallic or marble-like, with depth and movement across the floor. It is chosen for how it looks as well as how it covers the surface.',
+          'Our portfolio includes photographs labelled corporate head office, welding facility office, metallic marble detail and metallic epoxy with a gold accent. They show the range of effects, but every project is different, so use them as a starting point for a conversation about your own floor.',
+        ],
+      },
+      {
+        id: 'where-its-used',
+        heading: 'Where it is used',
+        paragraphs: [
+          'Examples include offices, showrooms and amenity spaces. These are places where a visitor notices the floor and where the design of the space matters.',
+          'If your project is a different kind of space, describe how it is used and who or what moves across the floor when you enquire, so it can be discussed.',
+        ],
+      },
+      {
+        id: 'choosing-the-look',
+        heading: 'Choosing the look you want',
+        paragraphs: [
+          'Collect images of the colours and effects you like, and say whether you prefer a metallic look, a marble-like look or a mix. Ask what can be reproduced on your floor, how the look will be agreed with you before work begins and whether examples of similar finished floors are available.',
+          'Colours on a screen or in a photograph can look different in a real room, so review any examples in a setting close to your own where possible. Do not treat a single photograph as a promise of how a finished floor will look.',
+        ],
+      },
+      {
+        id: 'plan-your-project',
+        heading: 'Plan your project',
+        paragraphs: [
+          'Start with the existing floor. Send photographs of the slab, mention cracks, previous coatings or repairs, and tell SMA your city, the approximate area and your preferred timing.',
+          'Explain which areas can be cleared, when the space can be closed and how people will move around it meanwhile. Ask for care guidance and return-to-use guidance for your project, and confirm both before you plan your schedule.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is metallic and marble epoxy flooring?',
+        answer:
+          'It is a seamless decorative epoxy flooring with metallic or marble-like effects, depth and movement.',
+      },
+      {
+        question: 'What kinds of spaces is it used in?',
+        answer:
+          'Examples include offices, showrooms and amenity spaces. If your space is different, describe it when you enquire so it can be discussed.',
+      },
+      {
+        question: 'Can I choose how my floor will look?',
+        answer:
+          'Bring examples of the colours and effects you like. Ask what can be reproduced, how the look will be agreed before work begins and whether examples of similar finished floors are available.',
+      },
+    ],
+    relatedArticles: [
+      'choosing-epoxy-flooring-contractor-gta',
+      'basement-epoxy-flooring-moisture',
     ],
   },
 ]

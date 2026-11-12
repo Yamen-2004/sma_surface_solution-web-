@@ -554,7 +554,7 @@ export default function ContentPages({ route }) {
     projects: [
       'The project gallery',
       'The difference is in the finish.',
-      'Explore eight before-and-after transformations: garage floors, entry steps, a balcony, a walkway and an industrial corridor.',
+      'Explore twelve before-and-after transformations: garage floors, entry steps, a balcony, a walkway and commercial floors.',
     ],
   }[route.type]
   return (
