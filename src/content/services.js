@@ -462,4 +462,437 @@ export const services = [
       'garage-floor-coating-cure-time',
     ],
   },
+  {
+    slug: 'safety-lines-and-marking',
+    title: 'Safety Lines and Marking',
+    shortTitle: 'Safety Lines & Marking',
+    description:
+      'Plan safety lines and floor marking with SMA Surface Solutions for walkways, aisles, loading docks and work zones in homes and businesses across the GTA.',
+    intro:
+      'Clear floor markings help people see where to walk, where equipment moves and which areas need extra attention. SMA Surface Solutions provides safety lines and floor marking in-house for walkways, aisles, loading docks, pedestrian areas and designated work or hazard zones. The service is available for residential and commercial spaces, indoors and outdoors. Start with how the space is used and who moves through it.',
+    image: '/assets/images/safety-lines-and-marking.jpg',
+    imageAlt:
+      'Blue walkway outlined with yellow lines running through a warehouse floor',
+    sections: [
+      {
+        id: 'where-markings-are-used',
+        heading: 'Where floor markings are used',
+        paragraphs: [
+          'Floor lines and markings can organize how people and equipment move through a space. SMA marks walkways, aisles, loading docks, pedestrian areas and designated work or hazard zones. Our portfolio includes examples labelled safety line coatings, epoxy safety walkway, loading dock marking, pedestrian and dock zones and aisle marking.',
+          'Every space has different traffic, surfaces and exposure, so treat those examples as a starting point for a conversation rather than a fixed specification. Tell us whether the area is residential or commercial, indoors or outdoors, and what the markings need to help people do.',
+        ],
+        bullets: [
+          'Walkways and aisles.',
+          'Loading docks and the areas around them.',
+          'Pedestrian areas and routes kept separate from equipment.',
+          'Designated work zones and hazard zones.',
+        ],
+      },
+      {
+        id: 'plan-the-layout',
+        heading: 'Decide what each marking needs to do',
+        paragraphs: [
+          'Before asking for an estimate, walk the space with the person responsible for it. On a sketch or a photograph, show where lines should start and stop, where routes cross and where doors, drains, racking, equipment or other fixed items limit the layout. A clear picture of the intended routes makes it easier to discuss the scope.',
+          'If your workplace, insurer or property manager requires a particular layout, colour scheme or signage, bring that information with you. A photograph does not show whether a layout satisfies a specific rule, so ask for any requirement to be reviewed with you before the work is agreed.',
+        ],
+        bullets: [
+          'Show the full length of each route, not only one section.',
+          'Note where pedestrian routes cross equipment routes.',
+          'Identify the zones that need to stand out and why.',
+          'Share any drawings, rules or colour requirements that apply.',
+        ],
+      },
+      {
+        id: 'surface-and-access',
+        heading: 'Check the surface and plan access',
+        paragraphs: [
+          'The condition of the floor affects the scope. Share photographs of wear, cracks, stains, existing markings and any coating already on the surface, including close views and a wide view of the whole area. Ask what preparation is proposed and how the new markings will work with the existing floor.',
+          'Marking work has to fit around the way the space operates. Explain which areas can be closed, when they can be closed and how people or vehicles will move in the meantime, whether that is a loading dock, an aisle or a household walkway. Do not assume an area can be reopened as soon as the lines look complete. Ask for separate guidance on foot traffic and equipment traffic.',
+        ],
+      },
+      {
+        id: 'request-an-estimate',
+        heading: 'Get a useful marking estimate',
+        paragraphs: [
+          'Send your city, the approximate area, whether it is indoors or outdoors and photographs of the surface. Add a simple sketch of the routes or zones, your preferred timing and any access limits. A useful estimate describes which areas are included, the proposed preparation, the layout and colours, the access plan and the return-to-use instructions.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Can you mark both indoor and outdoor areas?',
+        answer:
+          'SMA provides this service for residential and commercial spaces, indoors and outdoors. How a particular area is approached depends on its surface, exposure and traffic, so send photographs and describe the conditions when you enquire.',
+      },
+      {
+        question: 'Can you follow a specific safety requirement or layout?',
+        answer:
+          'Share any drawing, rule or colour requirement that applies to your site when you enquire so it can be discussed before work is agreed. Do not assume a marking layout satisfies a requirement until it has been confirmed for your space.',
+      },
+      {
+        question: 'How soon can people and equipment use new markings?',
+        answer:
+          'There is no standard time to assume. Ask for return-to-use guidance for your project, with separate instructions for foot traffic and for equipment or vehicles, before you plan access.',
+      },
+    ],
+    relatedArticles: [
+      'choosing-epoxy-flooring-contractor-gta',
+      'are-epoxy-garage-floors-slippery',
+      'garage-floor-coating-cure-time',
+    ],
+  },
+  {
+    slug: 'polished-concrete-flooring',
+    title: 'Polished Concrete Flooring',
+    shortTitle: 'Polished Concrete',
+    description:
+      'Learn how SMA Surface Solutions turns an existing concrete slab into a finished floor by grinding, densifying and polishing for retail, showrooms and offices.',
+    intro:
+      'Polished concrete turns the existing concrete slab into the finished floor. SMA Surface Solutions grinds the slab with HEPA dust extraction, densifies it and polishes it to the requested sheen. Suitable examples include retail spaces, showrooms, offices and commercial units. Start with the condition of your slab and how the space is used.',
+    image: '/assets/images/polished-concrete-flooring.png',
+    imageAlt:
+      'Smooth grey concrete floor reflecting overhead lights along a store aisle with shelves, a shopping cart and plants',
+    sections: [
+      {
+        id: 'slab-to-finished-floor',
+        heading: 'From existing slab to finished floor',
+        paragraphs: [
+          'With polished concrete, the slab already in your building becomes the finished floor. SMA grinds the concrete, densifies it and polishes it to the sheen you request. Because the result comes from your own slab, the starting point is the concrete you have rather than a product chosen from a sample board.',
+          'Our portfolio includes a commercial retail space, a furniture showroom, an exposed aggregate polish and a dust-free grinding photograph. Use them to see the kind of finished floors and working methods involved, then discuss how your own slab compares.',
+        ],
+      },
+      {
+        id: 'the-process',
+        heading: 'How the work is carried out',
+        paragraphs: [
+          'The process has three stages. Ask SMA to explain what each stage involves for your floor and how the proposed sheen will be agreed with you before work begins.',
+        ],
+        bullets: [
+          'Grinding the slab with HEPA dust extraction.',
+          'Densifying the concrete.',
+          'Polishing to the requested sheen.',
+        ],
+      },
+      {
+        id: 'check-the-slab',
+        heading: 'Look at the slab before you decide',
+        paragraphs: [
+          'The finished appearance depends on the concrete itself. Cracks, patches, stains, joints, previous coatings and variations in the slab can all affect what the floor looks like and what preparation is needed. Whether a particular slab suits polishing needs to be assessed, so avoid assuming a finish from a photograph of another floor.',
+          'Send wide and close photographs of the existing floor, and describe any repairs, coatings or damage you know about. Ask what you can expect from your slab and request examples of similar finished work, so your expectations are set before the scope is agreed.',
+        ],
+      },
+      {
+        id: 'spaces-and-planning',
+        heading: 'Suitable spaces and planning your project',
+        paragraphs: [
+          'Suitable examples include retail spaces, showrooms, offices and commercial units. If your space is a different type, describe how it is used and who or what moves across the floor when you enquire.',
+          'Send your city, the approximate area, photographs and your preferred timing. Explain which areas can be cleared, when the space can be closed and how the floor will be used afterwards. Ask for access and return-to-use guidance for your project, because the right instructions depend on the space and the work involved.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is polished concrete flooring?',
+        answer:
+          'Polished concrete uses your existing concrete slab as the finished floor. The slab is ground with HEPA dust extraction, densified and polished to the sheen you request.',
+      },
+      {
+        question: 'What kinds of spaces is it suitable for?',
+        answer:
+          'Suitable examples include retail spaces, showrooms, offices and commercial units. If your space is different, describe it when you enquire so it can be discussed.',
+      },
+      {
+        question: 'Can I know how my floor will look before it is assessed?',
+        answer:
+          'The result depends on your existing slab, so send photographs and ask for an assessment. Request examples of similar finished floors and confirm the sheen and the access and return-to-use guidance before work is agreed.',
+      },
+    ],
+    relatedArticles: [
+      'choosing-epoxy-flooring-contractor-gta',
+      'basement-epoxy-flooring-moisture',
+    ],
+  },
+  {
+    slug: 'grind-and-seal-concrete',
+    title: 'Grind and Seal Systems',
+    shortTitle: 'Grind & Seal',
+    description:
+      'Explore grind and seal systems from SMA Surface Solutions: concrete is mechanically ground, densified and sealed for warehouses, storage areas and production floors.',
+    intro:
+      'A grind and seal system works with the concrete you already have. SMA Surface Solutions mechanically grinds the concrete, densifies it and seals it. The finish is described as hard-wearing and dust-resistant, with stain resistance and easier cleaning. Suitable examples include warehouses, storage areas, production floors and high-traffic commercial spaces.',
+    image: '/assets/images/grind-and-seal-concrete.png',
+    imageAlt:
+      'Smooth grey concrete floor in a warehouse aisle with orange racking and a forklift in the distance',
+    sections: [
+      {
+        id: 'ground-densified-sealed',
+        heading: 'A ground, densified and sealed floor',
+        paragraphs: [
+          'In a grind and seal system, the concrete is mechanically ground, densified and then sealed. The sealed concrete becomes the working surface of the floor. The finish is described as hard-wearing and dust-resistant, with stain resistance and easier cleaning.',
+          'Our portfolio includes photographs labelled grind and seal system and sealer application. They show the type of floor and the work involved, but every slab is different, so use them as a starting point for a conversation about your own space.',
+        ],
+      },
+      {
+        id: 'the-process',
+        heading: 'How the system is applied',
+        paragraphs: [
+          'The system has three stages. Ask SMA to explain what each stage involves for your floor, which sealer is proposed and what you can expect from the finished surface before the work is agreed.',
+        ],
+        bullets: [
+          'Mechanically grinding the concrete.',
+          'Densifying the concrete.',
+          'Sealing the surface.',
+        ],
+      },
+      {
+        id: 'suitable-spaces',
+        heading: 'Where a grind and seal system is used',
+        paragraphs: [
+          'Suitable examples include warehouses, storage areas, production floors and high-traffic commercial spaces. These are places where a floor has to cope with regular movement and where dust, staining and cleaning matter.',
+          'How a floor performs depends on the slab, the traffic and what is driven, dragged or spilled across it. Describe how your space is used, including equipment, spills and cleaning routines, so the proposed system can be discussed against your actual conditions.',
+        ],
+      },
+      {
+        id: 'plan-your-project',
+        heading: 'Plan your project',
+        paragraphs: [
+          'Start with the existing slab. Send wide and close photographs, and mention cracks, stains, previous coatings, repairs and any areas that are damp. Tell SMA your city, the approximate area and your preferred timing.',
+          'Work in an operating space needs planning. Explain which areas can be cleared, when they can be closed and how people and equipment will move meanwhile. Ask for return-to-use guidance for your project, with separate instructions for foot traffic and for equipment, and confirm it before you plan access.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is a grind and seal system?',
+        answer:
+          'It is a ground, densified and sealed concrete floor. The concrete is mechanically ground, densified and then sealed. The finish is described as hard-wearing and dust-resistant, with stain resistance and easier cleaning.',
+      },
+      {
+        question: 'What kinds of spaces is it suitable for?',
+        answer:
+          'Suitable examples include warehouses, storage areas, production floors and high-traffic commercial spaces. If your space is different, describe how it is used when you enquire so it can be discussed.',
+      },
+      {
+        question: 'What should I ask before choosing a grind and seal system?',
+        answer:
+          'Ask which sealer is proposed, how the floor is cleaned and cared for, and what return-to-use guidance applies to your space. Share photographs of your slab and details of the traffic and spills it will see.',
+      },
+    ],
+    relatedArticles: [
+      'choosing-epoxy-flooring-contractor-gta',
+      'basement-epoxy-flooring-moisture',
+    ],
+  },
+  {
+    slug: 'polyurethane-cement-flooring',
+    title: 'Polyurethane Cement Systems',
+    shortTitle: 'Polyurethane Cement',
+    description:
+      'Explore polyurethane cement flooring from SMA Surface Solutions for hot-water washdown, chemical exposure and thermal shock, with integral cove base.',
+    intro:
+      'Polyurethane cement is a specific flooring system, separate from polyaspartic flooring. SMA Surface Solutions offers it for floors described in our portfolio as facing hot-water washdown, chemical exposure and thermal shock, with integral cove base for a seamless surface. Examples include food and beverage production, commercial kitchens and research or healthcare labs.',
+    image: '/assets/images/polyurethane-cement-flooring.png',
+    imageAlt:
+      'Orange-red floor with a floor drain beside stainless steel equipment in a glass-walled room',
+    sections: [
+      {
+        id: 'polyurethane-cement-system',
+        heading: 'A polyurethane cement flooring system',
+        paragraphs: [
+          'Polyurethane cement is its own flooring system. It is not the same as polyaspartic, so do not assume the two share the same layers, specification or suitability. Ask SMA to explain the system proposed for your floor and what each part of it does.',
+          'Our portfolio describes polyurethane cement for hot-water washdown, chemical exposure and thermal shock. Whether it is right for your space depends on the actual conditions, so ask for product documentation that matches your requirements before the system is chosen.',
+        ],
+      },
+      {
+        id: 'integral-cove-base',
+        heading: 'Integral cove base and a seamless surface',
+        paragraphs: [
+          'The portfolio describes integral cove base as part of creating a seamless surface where the floor meets the wall. One of our photographs is labelled integral cove base.',
+          'When you request an estimate, show the walls, drains, thresholds and equipment bases that touch the floor. Ask which of these edges and transitions are included in the proposed scope and how each one will be finished.',
+        ],
+      },
+      {
+        id: 'where-its-used',
+        heading: 'Where this system is used',
+        paragraphs: [
+          'Examples in our portfolio include food and beverage production, commercial kitchens and research or healthcare labs. Photographs are available for a commercial kitchen and for food and beverage production.',
+          'Describe how your floor is used. Include how it is washed, the temperatures it faces and the names of any chemicals that reach it. If your space has hygiene, regulatory or specification requirements, state them at the start and ask for the documentation you need. A general description of a system does not show that it meets a particular requirement.',
+        ],
+        bullets: [
+          'Explain how and how often the floor is washed.',
+          'List the chemicals that reach the floor.',
+          'Note any hot liquids or sudden temperature changes.',
+          'Identify drains, walls and equipment bases in the area.',
+        ],
+      },
+      {
+        id: 'plan-your-project',
+        heading: 'Plan your project',
+        paragraphs: [
+          'Send your city, the approximate area, photographs of the existing floor and details of any damage or previous coatings. Include a simple layout showing drains, walls and equipment, and tell SMA your preferred timing.',
+          'Production areas and kitchens usually have to keep operating around the work. Explain which areas can be closed and when, and how access will be managed. Ask for return-to-use guidance for your project, with separate instructions for foot traffic, washdown and equipment, and confirm it before you plan your schedule.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is polyurethane cement flooring?',
+        answer:
+          'It is a specific flooring system, separate from polyaspartic. Our portfolio describes it for hot-water washdown, chemical exposure and thermal shock, with integral cove base for a seamless surface.',
+      },
+      {
+        question: 'Is polyurethane cement the same as polyaspartic?',
+        answer:
+          'No. They are separate flooring systems. Ask for the system proposed for your project, its layers and its documentation rather than assuming the two behave in the same way.',
+      },
+      {
+        question: 'What spaces is it used in?',
+        answer:
+          'Examples include food and beverage production, commercial kitchens and research or healthcare labs. Describe your washdown, chemical and temperature conditions when you enquire, and ask for documentation for any specific requirement.',
+      },
+    ],
+    relatedArticles: [
+      'choosing-epoxy-flooring-contractor-gta',
+      'basement-epoxy-flooring-moisture',
+    ],
+  },
+  {
+    slug: 'concrete-repair-and-new-slabs',
+    title: 'Concrete Repair and New Slabs',
+    shortTitle: 'Repair & New Slabs',
+    description:
+      'Plan concrete crack and joint repair, other concrete repairs and new slab pours with SMA Surface Solutions for interior or exterior spaces across the GTA.',
+    intro:
+      'SMA Surface Solutions handles concrete crack and joint repair, other concrete repairs and new slab pours. Our portfolio shows repair work alongside new interior or exterior concrete slabs. Start with what the concrete needs, whether that is a repair to an existing floor or a new slab, and how you plan to use it.',
+    image: '/assets/images/concrete-repair-and-new-slabs.png',
+    imageAlt:
+      'Glossy grey floor with light reflections ending at a concrete strip and a diamond-plate threshold',
+    sections: [
+      {
+        id: 'repairs-and-new-slabs',
+        heading: 'Repairs and new slabs',
+        paragraphs: [
+          'SMA handles concrete work in three main areas. Tell us which of them your project needs, or describe the problem and we can discuss it with you.',
+          'Our portfolio shows repair work, including an industrial corridor labelled crack repair and epoxy coating, and new concrete slabs, both interior and exterior. Each project depends on its own site, so use these examples as a starting point rather than a fixed scope.',
+        ],
+        bullets: [
+          'Concrete crack and joint repair.',
+          'Other concrete repairs.',
+          'New slab pours.',
+        ],
+      },
+      {
+        id: 'planning-a-repair',
+        heading: 'Planning a concrete repair',
+        paragraphs: [
+          'Photograph the damage with both wide and close views. Show where the cracks, joints or damaged areas are, roughly how large they are and what the floor is used for. Mention anything you have noticed, such as water, movement or damage that is getting worse.',
+          'Ask SMA to assess the concrete and explain what repair is proposed and what is included in the scope. If you are concerned that the damage may be structural, say so when you enquire and ask who should assess it. A photograph on its own may not show what is needed.',
+        ],
+      },
+      {
+        id: 'planning-a-new-slab',
+        heading: 'Planning a new slab',
+        paragraphs: [
+          'For a new slab, describe where it will go, whether it is interior or exterior, its approximate size and what it will be used for. Explain how vehicles, equipment or people will reach the area and what you plan to put on the slab afterwards.',
+          'Ask exactly what is included in the proposal and what is not, so nothing is assumed. Ask for guidance on when the slab can be used and when it can be coated or finished, and get that guidance for your own project rather than relying on a general rule.',
+        ],
+      },
+      {
+        id: 'request-an-estimate',
+        heading: 'Get a useful estimate',
+        paragraphs: [
+          'Send your city, whether you need a repair or a new slab, the approximate area and whether it is indoors or outdoors. Add photographs, your preferred timing and any limits on access. A useful estimate explains what work is included, what is not, and how access and use of the finished concrete will be handled.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What concrete work does SMA handle?',
+        answer:
+          'SMA handles concrete crack and joint repair, other concrete repairs and new slab pours. Describe your project when you enquire so the right work can be discussed.',
+      },
+      {
+        question: 'Can new slabs be poured indoors and outdoors?',
+        answer:
+          'Our portfolio shows new interior and exterior concrete slabs. Tell SMA the location, approximate size and intended use of your slab, and ask what is included in the proposal.',
+      },
+      {
+        question: 'What should I send for a repair estimate?',
+        answer:
+          'Send wide and close photographs of the cracks, joints or damaged areas, the approximate size and details of how the floor is used. If you think the damage may be structural, say so and ask who should assess it.',
+      },
+    ],
+    relatedArticles: [
+      'choosing-epoxy-flooring-contractor-gta',
+      'basement-epoxy-flooring-moisture',
+      'peeling-garage-floor-coating-repair',
+    ],
+  },
+  {
+    slug: 'metallic-marble-epoxy-flooring',
+    title: 'Metallic and Marble Epoxy',
+    shortTitle: 'Metallic & Marble Epoxy',
+    description:
+      'Explore seamless metallic and marble epoxy flooring from SMA Surface Solutions, with decorative depth and movement for offices, showrooms and amenity spaces.',
+    intro:
+      'Metallic and marble epoxy is a seamless decorative flooring with metallic or marble-like effects, depth and movement. SMA Surface Solutions offers it for spaces where the floor is part of the design. Examples include offices, showrooms and amenity spaces. Start with the look you want and the space the floor will serve.',
+    image: '/assets/images/metallic-marble-epoxy-flooring.png',
+    imageAlt:
+      'Glossy grey floor with thin gold lines in a triangular pattern in front of glass doors and a green plant wall',
+    sections: [
+      {
+        id: 'seamless-decorative-epoxy',
+        heading: 'Seamless decorative epoxy',
+        paragraphs: [
+          'Metallic and marble epoxy flooring is a seamless decorative finish. The effects can look metallic or marble-like, with depth and movement across the floor. It is chosen for how it looks as well as how it covers the surface.',
+          'Our portfolio includes photographs labelled corporate head office, welding facility office, metallic marble detail and metallic epoxy with a gold accent. They show the range of effects, but every project is different, so use them as a starting point for a conversation about your own floor.',
+        ],
+      },
+      {
+        id: 'where-its-used',
+        heading: 'Where it is used',
+        paragraphs: [
+          'Examples include offices, showrooms and amenity spaces. These are places where a visitor notices the floor and where the design of the space matters.',
+          'If your project is a different kind of space, describe how it is used and who or what moves across the floor when you enquire, so it can be discussed.',
+        ],
+      },
+      {
+        id: 'choosing-the-look',
+        heading: 'Choosing the look you want',
+        paragraphs: [
+          'Collect images of the colours and effects you like, and say whether you prefer a metallic look, a marble-like look or a mix. Ask what can be reproduced on your floor, how the look will be agreed with you before work begins and whether examples of similar finished floors are available.',
+          'Colours on a screen or in a photograph can look different in a real room, so review any examples in a setting close to your own where possible. Do not treat a single photograph as a promise of how a finished floor will look.',
+        ],
+      },
+      {
+        id: 'plan-your-project',
+        heading: 'Plan your project',
+        paragraphs: [
+          'Start with the existing floor. Send photographs of the slab, mention cracks, previous coatings or repairs, and tell SMA your city, the approximate area and your preferred timing.',
+          'Explain which areas can be cleared, when the space can be closed and how people will move around it meanwhile. Ask for care guidance and return-to-use guidance for your project, and confirm both before you plan your schedule.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What is metallic and marble epoxy flooring?',
+        answer:
+          'It is a seamless decorative epoxy flooring with metallic or marble-like effects, depth and movement.',
+      },
+      {
+        question: 'What kinds of spaces is it used in?',
+        answer:
+          'Examples include offices, showrooms and amenity spaces. If your space is different, describe it when you enquire so it can be discussed.',
+      },
+      {
+        question: 'Can I choose how my floor will look?',
+        answer:
+          'Bring examples of the colours and effects you like. Ask what can be reproduced, how the look will be agreed before work begins and whether examples of similar finished floors are available.',
+      },
+    ],
+    relatedArticles: [
+      'choosing-epoxy-flooring-contractor-gta',
+      'basement-epoxy-flooring-moisture',
+    ],
+  },
 ]

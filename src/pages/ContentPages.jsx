@@ -17,6 +17,37 @@ import ContactSection from '../sections/ContactSection.jsx'
 import QuestionsPage from './QuestionsPage.jsx'
 import DecisionSupport from '../components/DecisionSupport.jsx'
 import { quickAnswers } from '../content/questions.js'
+import imageManifest from '../content/image-manifest.json'
+
+// At desktop widths the hero photo keeps its own proportions, is never shown
+// larger than its natural pixel size, and is centred in a square frame.
+// Below 1024px the wrapper has no layout effect (see .detail-media in
+// index.css), so tablet and mobile keep the original presentation.
+function ServiceHeroImage({ image, alt }) {
+  const meta = imageManifest[image]
+  const widths = (meta?.srcSet ?? '')
+    .split(',')
+    .map((candidate) => parseInt(candidate.trim().split(' ')[1], 10))
+    .filter(Boolean)
+  const naturalWidth = widths.length ? Math.max(...widths) : meta?.width
+  const style =
+    meta && naturalWidth
+      ? {
+          '--detail-w': naturalWidth,
+          '--detail-ratio': (meta.width / meta.height).toFixed(5),
+        }
+      : undefined
+  return (
+    <div className="detail-media" style={style}>
+      <ResponsiveImage
+        src={image}
+        alt={alt}
+        className="detail-photo"
+        loading="eager"
+      />
+    </div>
+  )
+}
 
 const dateFormat = (date) =>
   new Date(`${date}T12:00:00Z`).toLocaleDateString('en-CA', {
@@ -112,12 +143,7 @@ export default function ContentPages({ route }) {
               Discuss your project ↗
             </a>
           </PageHeading>
-          <ResponsiveImage
-            src={d.image}
-            alt={d.imageAlt}
-            className="detail-photo"
-            loading="eager"
-          />
+          <ServiceHeroImage image={d.image} alt={d.imageAlt} />
         </div>
         <div className="reading-layout">
           <div>
@@ -528,7 +554,7 @@ export default function ContentPages({ route }) {
     projects: [
       'The project gallery',
       'The difference is in the finish.',
-      'Explore seven before-and-after transformations: garage floors, entry steps, a balcony and a walkway.',
+      'Explore twelve before-and-after transformations: garage floors, entry steps, a balcony, a walkway and commercial floors.',
     ],
   }[route.type]
   return (

@@ -23,6 +23,12 @@
     "height": 720,
     "srcSet": "/assets/optimized/commercial-epoxy-flooring-14775105e8cb-480.webp 480w, /assets/optimized/commercial-epoxy-flooring-14775105e8cb-960.webp 960w, /assets/optimized/commercial-epoxy-flooring-14775105e8cb-1600.webp 1600w"
   },
+  "/assets/images/concrete-repair-and-new-slabs.png": {
+    "src": "/assets/optimized/concrete-repair-and-new-slabs-69d94ce67469-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/concrete-repair-and-new-slabs-69d94ce67469-480.webp 480w, /assets/optimized/concrete-repair-and-new-slabs-69d94ce67469-960.webp 960w, /assets/optimized/concrete-repair-and-new-slabs-69d94ce67469-1254.webp 1254w"
+  },
   "/assets/images/flake-epoxy-garages.webp": {
     "src": "/assets/optimized/flake-epoxy-garages-db96027ba8d3-960.webp",
     "width": 960,
@@ -35,11 +41,11 @@
     "height": 641,
     "srcSet": "/assets/optimized/garage-epoxy-flooring-5f037c406b3f-480.webp 480w, /assets/optimized/garage-epoxy-flooring-5f037c406b3f-960.webp 960w, /assets/optimized/garage-epoxy-flooring-5f037c406b3f-1535.webp 1535w"
   },
-  "/assets/images/logo.png": {
-    "src": "/assets/optimized/logo-7a61831e1792-210.webp",
-    "width": 210,
-    "height": 91,
-    "srcSet": "/assets/optimized/logo-7a61831e1792-210.webp 210w"
+  "/assets/images/grind-and-seal-concrete.png": {
+    "src": "/assets/optimized/grind-and-seal-concrete-ca9049fb73f0-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/grind-and-seal-concrete-ca9049fb73f0-480.webp 480w, /assets/optimized/grind-and-seal-concrete-ca9049fb73f0-960.webp 960w, /assets/optimized/grind-and-seal-concrete-ca9049fb73f0-1254.webp 1254w"
   },
   "/assets/images/logo2.png": {
     "src": "/assets/optimized/logo2-500.webp",
@@ -47,17 +53,65 @@
     "height": 179,
     "srcSet": "/assets/optimized/logo2-320.webp 320w, /assets/optimized/logo2-500.webp 500w"
   },
+  "/assets/images/metallic-marble-epoxy-flooring.png": {
+    "src": "/assets/optimized/metallic-marble-epoxy-flooring-a95b89d2b2f1-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/metallic-marble-epoxy-flooring-a95b89d2b2f1-480.webp 480w, /assets/optimized/metallic-marble-epoxy-flooring-a95b89d2b2f1-960.webp 960w, /assets/optimized/metallic-marble-epoxy-flooring-a95b89d2b2f1-1254.webp 1254w"
+  },
+  "/assets/images/polished-concrete-flooring.png": {
+    "src": "/assets/optimized/polished-concrete-flooring-bc33d9acedcb-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/polished-concrete-flooring-bc33d9acedcb-480.webp 480w, /assets/optimized/polished-concrete-flooring-bc33d9acedcb-960.webp 960w, /assets/optimized/polished-concrete-flooring-bc33d9acedcb-1254.webp 1254w"
+  },
   "/assets/images/polyaspartic-garage-flooring.webp": {
     "src": "/assets/optimized/polyaspartic-garage-flooring-dd8f3a817b4e-960.webp",
     "width": 960,
     "height": 640,
     "srcSet": "/assets/optimized/polyaspartic-garage-flooring-dd8f3a817b4e-480.webp 480w, /assets/optimized/polyaspartic-garage-flooring-dd8f3a817b4e-960.webp 960w, /assets/optimized/polyaspartic-garage-flooring-dd8f3a817b4e-1536.webp 1536w"
   },
+  "/assets/images/polyurethane-cement-flooring.png": {
+    "src": "/assets/optimized/polyurethane-cement-flooring-90ffe0f7c040-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/polyurethane-cement-flooring-90ffe0f7c040-480.webp 480w, /assets/optimized/polyurethane-cement-flooring-90ffe0f7c040-960.webp 960w, /assets/optimized/polyurethane-cement-flooring-90ffe0f7c040-1254.webp 1254w"
+  },
   "/assets/images/porch-front-steps-coating.jpg": {
     "src": "/assets/optimized/porch-front-steps-coating-64c454b8cac8-960.webp",
     "width": 960,
     "height": 720,
     "srcSet": "/assets/optimized/porch-front-steps-coating-64c454b8cac8-480.webp 480w, /assets/optimized/porch-front-steps-coating-64c454b8cac8-960.webp 960w, /assets/optimized/porch-front-steps-coating-64c454b8cac8-1440.webp 1440w"
+  },
+  "/assets/images/safety-lines-and-marking.jpg": {
+    "src": "/assets/optimized/safety-lines-and-marking-8295854c989a-960.webp",
+    "width": 960,
+    "height": 1034,
+    "srcSet": "/assets/optimized/safety-lines-and-marking-8295854c989a-480.webp 480w, /assets/optimized/safety-lines-and-marking-8295854c989a-960.webp 960w, /assets/optimized/safety-lines-and-marking-8295854c989a-1207.webp 1207w"
+  },
+  "/assets/projects/project_eight_after.png": {
+    "src": "/assets/optimized/project_eight_after-d10466129ca7-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/project_eight_after-d10466129ca7-480.webp 480w, /assets/optimized/project_eight_after-d10466129ca7-960.webp 960w, /assets/optimized/project_eight_after-d10466129ca7-1254.webp 1254w"
+  },
+  "/assets/projects/project_eight_before.png": {
+    "src": "/assets/optimized/project_eight_before-e5100174ebb3-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/project_eight_before-e5100174ebb3-480.webp 480w, /assets/optimized/project_eight_before-e5100174ebb3-960.webp 960w, /assets/optimized/project_eight_before-e5100174ebb3-1254.webp 1254w"
+  },
+  "/assets/projects/project_eleven_after.png": {
+    "src": "/assets/optimized/project_eleven_after-af444d9df08b-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/project_eleven_after-af444d9df08b-480.webp 480w, /assets/optimized/project_eleven_after-af444d9df08b-960.webp 960w, /assets/optimized/project_eleven_after-af444d9df08b-1254.webp 1254w"
+  },
+  "/assets/projects/project_eleven_before.png": {
+    "src": "/assets/optimized/project_eleven_before-3459285988a6-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/project_eleven_before-3459285988a6-480.webp 480w, /assets/optimized/project_eleven_before-3459285988a6-960.webp 960w, /assets/optimized/project_eleven_before-3459285988a6-1254.webp 1254w"
   },
   "/assets/projects/project_five_after.webp": {
     "src": "/assets/optimized/project_five_after-35c92ed45b48-960.webp",
@@ -82,6 +136,18 @@
     "width": 960,
     "height": 1280,
     "srcSet": "/assets/optimized/project_four_before-6324ae9bb41f-480.webp 480w, /assets/optimized/project_four_before-6324ae9bb41f-960.webp 960w, /assets/optimized/project_four_before-6324ae9bb41f-1200.webp 1200w"
+  },
+  "/assets/projects/project_nine_after.png": {
+    "src": "/assets/optimized/project_nine_after-def285abc301-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/project_nine_after-def285abc301-480.webp 480w, /assets/optimized/project_nine_after-def285abc301-960.webp 960w, /assets/optimized/project_nine_after-def285abc301-1254.webp 1254w"
+  },
+  "/assets/projects/project_nine_before.png": {
+    "src": "/assets/optimized/project_nine_before-5505f14b246c-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/project_nine_before-5505f14b246c-480.webp 480w, /assets/optimized/project_nine_before-5505f14b246c-960.webp 960w, /assets/optimized/project_nine_before-5505f14b246c-1254.webp 1254w"
   },
   "/assets/projects/project_one_after.jpeg": {
     "src": "/assets/optimized/project_one_after-2eb44653870f-960.webp",
@@ -119,6 +185,18 @@
     "height": 960,
     "srcSet": "/assets/optimized/project_six_before-7b28b7919bf6-480.webp 480w, /assets/optimized/project_six_before-7b28b7919bf6-960.webp 960w, /assets/optimized/project_six_before-7b28b7919bf6-1600.webp 1600w"
   },
+  "/assets/projects/project_ten_after.png": {
+    "src": "/assets/optimized/project_ten_after-15aa95602af9-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/project_ten_after-15aa95602af9-480.webp 480w, /assets/optimized/project_ten_after-15aa95602af9-960.webp 960w, /assets/optimized/project_ten_after-15aa95602af9-1254.webp 1254w"
+  },
+  "/assets/projects/project_ten_before.png": {
+    "src": "/assets/optimized/project_ten_before-f4ef0550cbdc-960.webp",
+    "width": 960,
+    "height": 890,
+    "srcSet": "/assets/optimized/project_ten_before-f4ef0550cbdc-480.webp 480w, /assets/optimized/project_ten_before-f4ef0550cbdc-960.webp 960w, /assets/optimized/project_ten_before-f4ef0550cbdc-1254.webp 1254w"
+  },
   "/assets/projects/project_three_after.jpeg": {
     "src": "/assets/optimized/project_three_after-13b218770b10-960.webp",
     "width": 960,
@@ -130,6 +208,18 @@
     "width": 960,
     "height": 1280,
     "srcSet": "/assets/optimized/project_three_before-428482ff0636-480.webp 480w, /assets/optimized/project_three_before-428482ff0636-960.webp 960w, /assets/optimized/project_three_before-428482ff0636-1200.webp 1200w"
+  },
+  "/assets/projects/project_twelve_after.png": {
+    "src": "/assets/optimized/project_twelve_after-c69f446bbba0-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/project_twelve_after-c69f446bbba0-480.webp 480w, /assets/optimized/project_twelve_after-c69f446bbba0-960.webp 960w, /assets/optimized/project_twelve_after-c69f446bbba0-1254.webp 1254w"
+  },
+  "/assets/projects/project_twelve_before.png": {
+    "src": "/assets/optimized/project_twelve_before-8c807af8bd59-960.webp",
+    "width": 960,
+    "height": 960,
+    "srcSet": "/assets/optimized/project_twelve_before-8c807af8bd59-480.webp 480w, /assets/optimized/project_twelve_before-8c807af8bd59-960.webp 960w, /assets/optimized/project_twelve_before-8c807af8bd59-1254.webp 1254w"
   },
   "/assets/projects/project_two_after.jpeg": {
     "src": "/assets/optimized/project_two_after-af4a167a82be-960.webp",
