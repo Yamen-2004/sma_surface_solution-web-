@@ -504,6 +504,32 @@ h3 {
   object-fit: cover;
   border-radius: 12px;
 }
+/* Layout-neutral below 1024px; see ServiceHeroImage in ContentPages.jsx. */
+.detail-media {
+  display: contents;
+}
+@media (min-width: 1024px) {
+  .detail-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    container-type: size;
+  }
+  .detail-media > .detail-photo {
+    /* Fallback without container units: natural width, capped at the frame. */
+    width: min(calc(var(--detail-w, 9999) * 1px), 100%);
+    /* Largest size that fits the square frame without cropping or enlarging. */
+    width: min(
+      calc(var(--detail-w, 9999) * 1px),
+      100cqw,
+      calc(100cqh * var(--detail-ratio, 1))
+    );
+    height: auto;
+    aspect-ratio: var(--detail-ratio, 1);
+    object-fit: contain;
+  }
+}
 .reading-layout {
   display: grid;
   grid-template-columns: minmax(0, 750px) minmax(220px, 1fr);
